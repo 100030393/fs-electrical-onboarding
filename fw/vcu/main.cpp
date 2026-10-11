@@ -44,11 +44,11 @@ void send_etc_CAN_messages() {
         vcu_tpdo_status[byte] = 0x00;
     }
 
-    // sets first two bits of message to 1
+    // sets bit 0 and bit 1 to 1
     vcu_tpdo_status[0] |= 1 << 0;
     vcu_tpdo_status[0] |= 1 << 1;
 
-    // sets 5th adn 7th bits to whatever etc.READY_TO_DRIVE evaluated to (0 or 1)
+    // sets bit 4 and bit 6 to whatever etc.READY_TO_DRIVE evaluated to (0 or 1)
     vcu_tpdo_status[0] |= etc.READY_TO_DRIVE << 4;
     vcu_tpdo_status[0] |= etc.READY_TO_DRIVE << 6;
 
