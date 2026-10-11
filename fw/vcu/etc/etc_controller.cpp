@@ -5,7 +5,7 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName PC1, PinName PC2) {}
+ETCController::ETCController(PinName PC_1, PinName PC_2) {}
 
 /* 
     Nice function to write which returns a wrapped version of the

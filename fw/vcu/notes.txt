@@ -3,7 +3,10 @@ to do:
         calc pedal position - add deadzone
         assign position to toruqe value based on t-range
     CAN stuff
-    clean up code
+    clean up code 
+        naming conventions and other best practice things
+            make some things const   
+        probably a  more efficient way to write most code
 
 types of faults
     apps1 = apps2 - done
@@ -12,12 +15,20 @@ types of faults
     pedal positions should not be changing quickly in opposite directions  - if this happens 10% diff check catches it
     10% difference between post-offset pedal positions  - kinda done need to add pedal offset calc.
 
-
+components info  
+    vcu - functions like cpu
+    hal - interface between high level and low level systems  - not really sure what this does
+        I think apps -> HAL -> VCU -> HAL -> motor
+    etc - program 'instructions' for VCU
 
 Percentage Difference =	
 |V1 - V2|/((V1 + V2)/2)
 × 100
 
+Hertz to MicroSeconds
+    MicroSeconds = 1,000,000/Hertz
+
+CAN Notes
 
 cpp notes
 {
