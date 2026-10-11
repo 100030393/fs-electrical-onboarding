@@ -799,6 +799,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "kicad-embed://formulaslug_drawing_sheet.kicad_wks",
     "plot_directory": "",
     "reuse_designators": true,
@@ -818,7 +826,7 @@
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "R1",
+    "used_designators": "#PWR8,C4,U2",
     "variants": []
   },
   "sheets": [
@@ -828,11 +836,11 @@
     ]
   ],
   "text_variables": {
-    "BOARD_TITLE": "[BOARD TITLE]",
-    "COMMENT1": "[COMMENT]",
+    "BOARD_TITLE": "12V To 5V Buck Converter",
+    "COMMENT1": "Standard Version ",
     "COMMENT2": "",
-    "NAMES": "[NAMES]",
-    "REVISION": "[REVISION]"
+    "NAMES": "Zander Hong",
+    "REVISION": "1.0"
   },
   "tuning_profiles": {
     "meta": {
