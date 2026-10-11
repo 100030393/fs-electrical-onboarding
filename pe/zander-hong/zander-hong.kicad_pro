@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1524,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.508
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.508,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -144,7 +160,7 @@
         "min_text_thickness": 0.1524,
         "min_through_hole_diameter": 0.254,
         "min_track_width": 0.127,
-        "min_via_annular_width": 0.254,
+        "min_via_annular_width": 0.127,
         "min_via_diameter": 0.508,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -495,7 +511,7 @@
     ]
   },
   "meta": {
-    "filename": "template.kicad_pro",
+    "filename": "zander-hong.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -739,6 +755,30 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer Part Number",
+          "name": "Manufacturer Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey Part Number",
+          "name": "Digikey Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey URL",
+          "name": "Digikey URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -821,8 +861,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "template.kicad_sch",
-        "name": "",
+        "filename": "zander-hong.kicad_sch",
+        "name": "zander-hong",
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
@@ -832,7 +872,7 @@
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
-      ""
+      "zander-hong"
     ]
   ],
   "text_variables": {
