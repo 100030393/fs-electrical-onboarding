@@ -40,22 +40,29 @@ int main() {
 void send_etc_CAN_messages() {   
     uint8_t vcu_tpdo_status[8];
     
+    for (int byte = 0; byte < 8; byte++) {
+        vcu_tpdo_status[byte] = 0x00;
+    }
+
     // sets first two bits of message to 1
+    vcu_tpdo_status[0] |= 1 << 0;
     vcu_tpdo_status[0] |= 1 << 1;
-    vcu_tpdo_status[0] |= 1 << 2;
 
     // sets 5th adn 7th bits to whatever etc.READY_TO_DRIVE evaluated to (0 or 1)
-    vcu_tpdo_status[0] |= etc.READY_TO_DRIVE << 5;
-    vcu_tpdo_status[0] |= etc.READY_TO_DRIVE << 7;
+    vcu_tpdo_status[0] |= etc.READY_TO_DRIVE << 4;
+    vcu_tpdo_status[0] |= etc.READY_TO_DRIVE << 6;
 
     // sets all remaining bits to 0
+    /*
     for (int byte = 0; byte < 8; byte++){
         for (int i = 0; i < 8; i++) {
-            if (i != 0 || i != 2 || i != 4 || i != 6) {
-                vcu_tpdo_status[byte] &= ~(1 << (i + 1));
+            if (i != 0 || i != 1 || i != 4 || i != 6) {
+                vcu_tpdo_status[byte] &= ~(1 << i);
             }
         }
     }
+    */
+
     CANMessage status_msg{403, vcu_tpdo_status, 8};
     can.write(status_msg);
 }
