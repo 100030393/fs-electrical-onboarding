@@ -2556,7 +2556,7 @@
 			)
 		)
 	)
-	(global_label "BSPD_TRIGGERED"
+	(global_label "SENSORS_TRIPPED"
 		(shape input)
 		(at 180.34 93.98 0)
 		(fields_autoplaced yes)
@@ -2568,7 +2568,7 @@
 		)
 		(uuid "ae59c43f-027e-48da-abf5-a2563cc8ccd0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.5327 93.98 0)
+			(at 200.8027 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

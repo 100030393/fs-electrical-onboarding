@@ -301,6 +301,399 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "74xx:74HC74"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -7.62 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74HC74"
+				(at -7.62 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Dual D Flip-flop, Set & Reset"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TTL DFF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "74HC74_1_0"
+				(pin input line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "~{R}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "~{S}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "Q"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "~{Q}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74HC74_1_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "74HC74_2_0"
+				(pin output line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "~{Q}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "Q"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "~{S}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "~{R}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74HC74_2_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "74HC74_3_0"
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74HC74_3_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Relay:Relay_SPST-NO"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -874,7 +1267,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(global_label "BSPD_TRIGGERED"
+	(global_label "SENSORS_TRIPPED"
 		(shape input)
 		(at 78.74 55.88 180)
 		(fields_autoplaced yes)
@@ -886,7 +1279,7 @@
 		)
 		(uuid "43447210-0b8d-4c21-8f86-061391ed2b82")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.5473 55.88 0)
+			(at 58.2773 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -919,6 +1312,163 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 128.27 46.99 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "088eb73c-f624-4dd1-a66c-f645cb818745")
+		(property "Reference" "#PWR053"
+			(at 132.08 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 124.46 46.9899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 128.27 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2380247-6b3b-4ee2-bcb8-b1099c253fbe")
+		)
+		(instances
+			(project "LV-onboarding-kicad"
+				(path "/9ed344af-984d-4749-b2fa-15659dd3799e"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 214.63 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "202e88c9-b422-4764-b315-b8a28b329315")
+		(property "Reference" "#PWR051"
+			(at 214.63 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 214.63 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f73147c7-2afa-4c7e-9505-e9a73d2b6c99")
+		)
+		(instances
+			(project "LV-onboarding-kicad"
+				(path "/9ed344af-984d-4749-b2fa-15659dd3799e"
+					(reference "#PWR051")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -995,6 +1545,202 @@
 			(project "LV-onboarding-kicad"
 				(path "/9ed344af-984d-4749-b2fa-15659dd3799e"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC74")
+		(at 275.59 22.86 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "645b63e3-f302-45cd-b9d3-1d6ec18b7344")
+		(property "Reference" "U15"
+			(at 277.7333 12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC74"
+			(at 277.7333 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 275.59 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf"
+			(at 275.59 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual D Flip-flop, Set & Reset"
+			(at 275.59 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "14"
+			(uuid "3ee4c7fb-4760-40e5-8f55-3c33527539ee")
+		)
+		(pin "1"
+			(uuid "2fd8131c-a71f-449c-b405-de6a29b5759a")
+		)
+		(pin "8"
+			(uuid "ad15e435-6ac2-40aa-81e2-6d0a692f7b64")
+		)
+		(pin "4"
+			(uuid "ac50564e-ae6f-4254-97d5-ea770c43c57d")
+		)
+		(pin "6"
+			(uuid "ed90dc78-e85d-44ac-bef1-96bb06d5efe2")
+		)
+		(pin "9"
+			(uuid "e7fdc579-0150-4235-88a7-3544fb70a41e")
+		)
+		(pin "2"
+			(uuid "3586f074-531a-4c07-86e8-9b92ed978899")
+		)
+		(pin "3"
+			(uuid "354217ed-152b-43d3-82f4-bb4f20010c74")
+		)
+		(pin "5"
+			(uuid "caa06e7d-dfa9-482a-917e-2b127732e502")
+		)
+		(pin "12"
+			(uuid "541348ca-4666-4a80-81ec-d414951eb4df")
+		)
+		(pin "7"
+			(uuid "7ad54116-5e2b-45f1-9b75-e6b75a14db34")
+		)
+		(pin "13"
+			(uuid "e737a3a8-b175-4c67-bb3e-ec631bd89612")
+		)
+		(pin "11"
+			(uuid "e4fb8e02-916e-419f-bf8f-a18477f56102")
+		)
+		(pin "10"
+			(uuid "368ca8fb-bd1f-40ff-9128-749710d44fb7")
+		)
+		(instances
+			(project "LV-onboarding-kicad"
+				(path "/9ed344af-984d-4749-b2fa-15659dd3799e"
+					(reference "U15")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 214.63 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8da48aea-94db-47d9-91a1-231e34826a20")
+		(property "Reference" "#PWR052"
+			(at 214.63 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 214.63 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 214.63 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb678341-d04a-4058-9295-fb690721eb23")
+		)
+		(instances
+			(project "LV-onboarding-kicad"
+				(path "/9ed344af-984d-4749-b2fa-15659dd3799e"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -1165,6 +1911,242 @@
 			(project "LV-onboarding-kicad"
 				(path "/9ed344af-984d-4749-b2fa-15659dd3799e"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC74")
+		(at 214.63 44.45 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5ae4b9e-61e8-4575-a9e8-bae212cd1785")
+		(property "Reference" "U15"
+			(at 220.98 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC74"
+			(at 220.98 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf"
+			(at 214.63 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual D Flip-flop, Set & Reset"
+			(at 214.63 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "14"
+			(uuid "3ee4c7fb-4760-40e5-8f55-3c33527539ee")
+		)
+		(pin "1"
+			(uuid "2fd8131c-a71f-449c-b405-de6a29b5759a")
+		)
+		(pin "8"
+			(uuid "ad15e435-6ac2-40aa-81e2-6d0a692f7b64")
+		)
+		(pin "4"
+			(uuid "ac50564e-ae6f-4254-97d5-ea770c43c57d")
+		)
+		(pin "6"
+			(uuid "ed90dc78-e85d-44ac-bef1-96bb06d5efe2")
+		)
+		(pin "9"
+			(uuid "e7fdc579-0150-4235-88a7-3544fb70a41e")
+		)
+		(pin "2"
+			(uuid "3586f074-531a-4c07-86e8-9b92ed978899")
+		)
+		(pin "3"
+			(uuid "354217ed-152b-43d3-82f4-bb4f20010c74")
+		)
+		(pin "5"
+			(uuid "caa06e7d-dfa9-482a-917e-2b127732e502")
+		)
+		(pin "12"
+			(uuid "541348ca-4666-4a80-81ec-d414951eb4df")
+		)
+		(pin "7"
+			(uuid "7ad54116-5e2b-45f1-9b75-e6b75a14db34")
+		)
+		(pin "13"
+			(uuid "e737a3a8-b175-4c67-bb3e-ec631bd89612")
+		)
+		(pin "11"
+			(uuid "e4fb8e02-916e-419f-bf8f-a18477f56102")
+		)
+		(pin "10"
+			(uuid "368ca8fb-bd1f-40ff-9128-749710d44fb7")
+		)
+		(instances
+			(project "LV-onboarding-kicad"
+				(path "/9ed344af-984d-4749-b2fa-15659dd3799e"
+					(reference "U15")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC74")
+		(at 135.89 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3eed191-3862-4e98-8f0f-7c898eab36d2")
+		(property "Reference" "U15"
+			(at 138.0333 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC74"
+			(at 138.0333 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf"
+			(at 135.89 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual D Flip-flop, Set & Reset"
+			(at 135.89 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "14"
+			(uuid "3ee4c7fb-4760-40e5-8f55-3c33527539ee")
+		)
+		(pin "1"
+			(uuid "2fd8131c-a71f-449c-b405-de6a29b5759a")
+		)
+		(pin "8"
+			(uuid "ad15e435-6ac2-40aa-81e2-6d0a692f7b64")
+		)
+		(pin "4"
+			(uuid "ac50564e-ae6f-4254-97d5-ea770c43c57d")
+		)
+		(pin "6"
+			(uuid "ed90dc78-e85d-44ac-bef1-96bb06d5efe2")
+		)
+		(pin "9"
+			(uuid "e7fdc579-0150-4235-88a7-3544fb70a41e")
+		)
+		(pin "2"
+			(uuid "3586f074-531a-4c07-86e8-9b92ed978899")
+		)
+		(pin "3"
+			(uuid "354217ed-152b-43d3-82f4-bb4f20010c74")
+		)
+		(pin "5"
+			(uuid "caa06e7d-dfa9-482a-917e-2b127732e502")
+		)
+		(pin "12"
+			(uuid "541348ca-4666-4a80-81ec-d414951eb4df")
+		)
+		(pin "7"
+			(uuid "7ad54116-5e2b-45f1-9b75-e6b75a14db34")
+		)
+		(pin "13"
+			(uuid "e737a3a8-b175-4c67-bb3e-ec631bd89612")
+		)
+		(pin "11"
+			(uuid "e4fb8e02-916e-419f-bf8f-a18477f56102")
+		)
+		(pin "10"
+			(uuid "368ca8fb-bd1f-40ff-9128-749710d44fb7")
+		)
+		(instances
+			(project "LV-onboarding-kicad"
+				(path "/9ed344af-984d-4749-b2fa-15659dd3799e"
+					(reference "U15")
 					(unit 1)
 				)
 			)
