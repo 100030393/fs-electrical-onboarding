@@ -82,12 +82,14 @@ void ETCController::update_implausibilities() {
 
         if (duration_ms > 100) {
             printf("Implaus detected");
+            READY_TO_DRIVE = false;
         }
     }
 
     printf("No implaus detected.\n");
     my_Timer.stop();
     my_Timer.reset();
+    READY_TO_DRIVE = true;
 
 
     /*

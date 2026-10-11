@@ -14,6 +14,7 @@ public:
         Start of public variables
     */
 
+    bool READY_TO_DRIVE;
 
 
     /*

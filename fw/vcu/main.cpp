@@ -40,6 +40,7 @@ int main() {
 void send_etc_CAN_messages() {   
     uint8_t vcu_tpdo_status[8];
     
+    // initialize byte array to 0;
     for (int byte = 0; byte < 8; byte++) {
         vcu_tpdo_status[byte] = 0x00;
     }
@@ -48,26 +49,20 @@ void send_etc_CAN_messages() {
     vcu_tpdo_status[0] |= 1 << 0;
     vcu_tpdo_status[0] |= 1 << 1;
 
-    // sets bit 4 and bit 6 to whatever etc.READY_TO_DRIVE evaluated to (0 or 1)
+    // sets bit 4 and bit 6 based on implaus detection.
+
+    // set bits 4 and 6 to 0 if no implaus detected.
     if (etc.READY_TO_DRIVE) {
         vcu_tpdo_status[0] &= ~(1 << 4);
         vcu_tpdo_status[0] &= ~(1 << 6);
+
+    // sets bits 4 and 6 to 1 if implaus detected.
     } else {
         vcu_tpdo_status[0] |= 1 << 4;
         vcu_tpdo_status[0] |= 1 << 6;
     }
 
-    // sets all remaining bits to 0
-    /*
-    for (int byte = 0; byte < 8; byte++){
-        for (int i = 0; i < 8; i++) {
-            if (i != 0 || i != 1 || i != 4 || i != 6) {
-                vcu_tpdo_status[byte] &= ~(1 << i);
-            }
-        }
-    }
-    */
-
+    // create and write CAN message
     CANMessage status_msg{403, vcu_tpdo_status, 8};
     can.write(status_msg);
 }
