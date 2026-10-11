@@ -511,7 +511,7 @@
     ]
   },
   "meta": {
-    "filename": "Buck_Conv.kicad_pro",
+    "filename": "Buck_Final.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -829,18 +829,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Buck_Conv.kicad_sch",
-        "name": "Buck_Conv",
+        "filename": "Buck_Final.kicad_sch",
+        "name": "Buck_Final",
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "R1-3,U1,L1,#PWR1-5,C1-6",
+    "used_designators": "R1-3,U1,L1,D1,#PWR1-7,C1-5",
     "variants": []
   },
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
-      "Buck_Conv"
+      "Buck_Final"
     ]
   ],
   "text_variables": {
