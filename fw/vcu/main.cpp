@@ -49,8 +49,13 @@ void send_etc_CAN_messages() {
     vcu_tpdo_status[0] |= 1 << 1;
 
     // sets bit 4 and bit 6 to whatever etc.READY_TO_DRIVE evaluated to (0 or 1)
-    vcu_tpdo_status[0] |= etc.READY_TO_DRIVE << 4;
-    vcu_tpdo_status[0] |= etc.READY_TO_DRIVE << 6;
+    if (etc.READY_TO_DRIVE) {
+        vcu_tpdo_status[0] |= 1 << 4;
+        vcu_tpdo_status[0] |= 1 << 6;
+    } else {
+        vcu_tpdo_status[0] &= ~(1 << 4);
+        vcu_tpdo_status[0] &= ~(1 << 6);
+    }
 
     // sets all remaining bits to 0
     /*
