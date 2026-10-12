@@ -80,12 +80,14 @@ void ETCController::update_implausibilities() {
     implaus_out_of_range = !(in_range(APPS1_percent * 3.3, APPS1_MIN_VOLTAGE, APPS1_MAX_VOLTAGE) && 
                              in_range(APPS2_percent * 3.3, APPS2_MIN_VOLTAGE, APPS2_MAX_VOLTAGE));
 
-    if (APPS1_pos > 0.1 or APPS2_pos > 0.1){
+    if (APPS1_pos > 0.1 || APPS2_pos > 0.1){
         if (std::abs(APPS1_pos - APPS2_pos) < 0.1) {
             implaus_deviation = false;
         } else {
             implaus_deviation = true;
         }
+    } else {
+        implaus_deviation = false;
     }
 
     /*
