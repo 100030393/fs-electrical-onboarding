@@ -1203,19 +1203,19 @@
 		)
 	)
 	(junction
-		(at 213.36 77.47)
+		(at 198.12 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0edfeb32-aece-4c3f-9ed5-e75504923494")
+	)
+	(junction
+		(at 234.95 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1aaf4d1c-5576-4f54-8299-5645f91b1759")
 	)
 	(junction
-		(at 190.5 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54cc0876-83f0-41d5-8c5b-2d04a5715fcf")
-	)
-	(junction
-		(at 222.25 77.47)
+		(at 243.84 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84638a3a-4426-4a6e-b338-83d166e95d25")
@@ -1225,6 +1225,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2867110-d997-4192-b885-05d6691e2f52")
+	)
+	(junction
+		(at 190.5 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afe35b21-284f-4575-b995-a6b1fe424b22")
 	)
 	(junction
 		(at 92.71 74.93)
@@ -1239,16 +1245,22 @@
 		(uuid "b2ac3470-4e3c-4926-8b85-edd7fadaebf1")
 	)
 	(junction
-		(at 190.5 92.71)
+		(at 198.12 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c55c8b6b-8631-4ce6-a178-5adb5bd4b25b")
+		(uuid "c202d012-78c2-4f7c-85a9-eb18f8cad38a")
 	)
 	(junction
-		(at 207.01 106.68)
+		(at 228.6 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3dbf3ca-7d6a-40d3-8355-321e13ee3e5e")
+	)
+	(junction
+		(at 198.12 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dea61b0a-a1fd-4de2-b406-88f0246a2555")
 	)
 	(junction
 		(at 92.71 101.6)
@@ -1257,7 +1269,7 @@
 		(uuid "e4b9f6f3-c900-4a9e-ade9-598dd55669c6")
 	)
 	(junction
-		(at 200.66 77.47)
+		(at 222.25 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e95b3c9f-bf2b-4b40-91b5-311edad2bf58")
@@ -1284,13 +1296,23 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 77.47) (xy 190.5 80.01)
+			(xy 190.5 81.28) (xy 190.5 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d139c4a-3eb6-4bcf-a7c8-dc12e21bf478")
+		(uuid "06049edf-d633-4ad2-a9bc-e00b2d366f30")
+	)
+	(wire
+		(pts
+			(xy 204.47 80.01) (xy 204.47 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12ff0df8-a9bd-4b8a-93eb-ebec6d84e7cf")
 	)
 	(wire
 		(pts
@@ -1314,13 +1336,43 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 106.68) (xy 200.66 106.68)
+			(xy 228.6 106.68) (xy 222.25 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "24d6ada1-8078-4099-a8b3-5b2ffd63d037")
+	)
+	(wire
+		(pts
+			(xy 190.5 90.17) (xy 190.5 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29387678-5e8d-495f-9319-6387a33b481b")
+	)
+	(wire
+		(pts
+			(xy 198.12 80.01) (xy 204.47 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bc89980-02f0-4192-8778-57d40d3537cf")
+	)
+	(wire
+		(pts
+			(xy 190.5 80.01) (xy 198.12 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38d7591f-6e9a-43bc-82a4-433bdecd3ebc")
 	)
 	(wire
 		(pts
@@ -1374,6 +1426,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 77.47) (xy 222.25 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e7cd25a-ddd3-44d2-8fd0-736709b67da6")
+	)
+	(wire
+		(pts
 			(xy 86.36 101.6) (xy 92.71 101.6)
 		)
 		(stroke
@@ -1384,23 +1446,23 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 77.47) (xy 200.66 77.47)
+			(xy 204.47 88.9) (xy 204.47 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6482e942-6811-4ba4-84f6-6103b9d7a552")
+	)
+	(wire
+		(pts
+			(xy 180.34 77.47) (xy 198.12 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "64ad1d0c-ac89-4821-b123-3b17863d8c03")
-	)
-	(wire
-		(pts
-			(xy 180.34 77.47) (xy 190.5 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64ec4be6-0fb9-412b-8c2f-7bcdb03a2a1e")
 	)
 	(wire
 		(pts
@@ -1414,7 +1476,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 77.47) (xy 213.36 93.98)
+			(xy 234.95 77.47) (xy 234.95 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1434,6 +1496,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 90.17) (xy 198.12 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cbba444-dbde-4e54-9b67-1b7478728e04")
+	)
+	(wire
+		(pts
 			(xy 66.04 74.93) (xy 69.85 74.93)
 		)
 		(stroke
@@ -1444,7 +1516,17 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 77.47) (xy 213.36 77.47)
+			(xy 198.12 77.47) (xy 198.12 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7444aaaa-226b-4cd1-8379-8fdbe0b5f4a6")
+	)
+	(wire
+		(pts
+			(xy 222.25 77.47) (xy 234.95 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1464,7 +1546,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 101.6) (xy 213.36 106.68)
+			(xy 234.95 101.6) (xy 234.95 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1504,7 +1586,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 106.68) (xy 207.01 107.95)
+			(xy 228.6 106.68) (xy 228.6 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1514,7 +1596,17 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 106.68) (xy 207.01 106.68)
+			(xy 198.12 90.17) (xy 190.5 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "920504f1-3aff-48a4-90d3-b8779d0ec6ce")
+	)
+	(wire
+		(pts
+			(xy 234.95 106.68) (xy 228.6 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1531,6 +1623,16 @@
 			(type default)
 		)
 		(uuid "9ceed468-918c-4287-ae65-4fe249dcbd4f")
+	)
+	(wire
+		(pts
+			(xy 198.12 92.71) (xy 190.5 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1c1e276-6098-47d2-b5cd-562be7098e16")
 	)
 	(wire
 		(pts
@@ -1594,13 +1696,13 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 87.63) (xy 190.5 92.71)
+			(xy 204.47 90.17) (xy 198.12 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "da6bb7a3-1db6-4ad6-bd53-8ce7e43c18d0")
+		(uuid "d7881279-d084-4ae3-994f-71880e013d14")
 	)
 	(wire
 		(pts
@@ -1624,7 +1726,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 77.47) (xy 200.66 93.98)
+			(xy 222.25 77.47) (xy 222.25 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1644,7 +1746,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 77.47) (xy 222.25 77.47)
+			(xy 234.95 77.47) (xy 243.84 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1664,7 +1766,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 106.68) (xy 200.66 101.6)
+			(xy 222.25 106.68) (xy 222.25 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2246,7 +2348,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 207.01 107.95 0)
+		(at 228.6 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2257,7 +2359,7 @@
 		(fields_autoplaced yes)
 		(uuid "879ce01c-53a9-490a-a9f9-e2c12f19e66c")
 		(property "Reference" "#PWR05"
-			(at 207.01 114.3 0)
+			(at 228.6 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2268,7 +2370,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 207.01 113.03 0)
+			(at 228.6 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2278,7 +2380,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 207.01 107.95 0)
+			(at 228.6 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2289,7 +2391,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 207.01 107.95 0)
+			(at 228.6 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2300,7 +2402,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 207.01 107.95 0)
+			(at 228.6 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2450,7 +2552,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 222.25 77.47 0)
+		(at 243.84 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2461,7 +2563,7 @@
 		(fields_autoplaced yes)
 		(uuid "920fcd86-5b76-4621-ae0d-e4fd8b2b00ca")
 		(property "Reference" "#PWR06"
-			(at 222.25 81.28 0)
+			(at 243.84 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2472,7 +2574,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 222.25 72.39 0)
+			(at 243.84 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2482,7 +2584,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 77.47 0)
+			(at 243.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2493,7 +2595,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 77.47 0)
+			(at 243.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2504,7 +2606,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 222.25 77.47 0)
+			(at 243.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2730,7 +2832,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 200.66 97.79 0)
+		(at 222.25 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2741,7 +2843,7 @@
 		(fields_autoplaced yes)
 		(uuid "b6279848-2707-4ef8-bea6-e5923581202a")
 		(property "Reference" "C4"
-			(at 204.47 96.5199 0)
+			(at 226.06 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2752,7 +2854,7 @@
 			)
 		)
 		(property "Value" "22µF"
-			(at 204.47 99.0599 0)
+			(at 226.06 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2763,7 +2865,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 201.6252 101.6 0)
+			(at 223.2152 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2773,8 +2875,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 200.66 97.79 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
+			(at 222.25 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2784,8 +2886,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 200.66 97.79 0)
+		(property "Description" "Capacitor, 22µF, 16V, X7R, 20%, 1206"
+			(at 222.25 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2795,8 +2897,8 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" ""
-			(at 200.66 97.79 0)
+		(property "Digikey Part Number" "490-GRM31CZ71C226ME15LCT-ND"
+			(at 222.25 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2806,8 +2908,8 @@
 				)
 			)
 		)
-		(property "Digikey URL" ""
-			(at 200.66 97.79 0)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM31CZ71C226ME15L/13904808"
+			(at 222.25 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2817,8 +2919,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 200.66 97.79 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 222.25 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2828,8 +2930,8 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 200.66 97.79 0)
+		(property "Manufacturer Part Number" "GRM31CZ71C226ME15L"
+			(at 222.25 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2856,7 +2958,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 190.5 83.82 0)
+		(at 190.5 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2867,7 +2969,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd3ba972-aa1f-4298-9623-dd251fe1c3d4")
 		(property "Reference" "R1"
-			(at 193.04 82.5499 0)
+			(at 193.04 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2878,7 +2980,7 @@
 			)
 		)
 		(property "Value" "52.3k"
-			(at 193.04 85.0899 0)
+			(at 193.04 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2889,7 +2991,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 188.722 83.82 90)
+			(at 188.722 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2900,7 +3002,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
-			(at 190.5 83.82 0)
+			(at 190.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2911,7 +3013,7 @@
 			)
 		)
 		(property "Description" "Resistor, 52.3k, 1%, 0.1W, 0603, Thick-Film, AEC-Q200"
-			(at 190.5 83.82 0)
+			(at 190.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2922,7 +3024,7 @@
 			)
 		)
 		(property "Digikey Part Number" "P52.3KHCT-ND"
-			(at 190.5 83.82 0)
+			(at 190.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2933,7 +3035,7 @@
 			)
 		)
 		(property "Digikey URL" "https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-3EKF5232V/196395"
-			(at 190.5 83.82 0)
+			(at 190.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2944,7 +3046,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic Industry"
-			(at 190.5 83.82 0)
+			(at 190.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2955,7 +3057,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-3EKF5232V"
-			(at 190.5 83.82 0)
+			(at 190.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2982,7 +3084,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 213.36 97.79 0)
+		(at 234.95 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2993,7 +3095,7 @@
 		(fields_autoplaced yes)
 		(uuid "c4804ae7-0874-4f52-8e4b-5fa6e83394b8")
 		(property "Reference" "C5"
-			(at 217.17 96.5199 0)
+			(at 238.76 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3004,7 +3106,7 @@
 			)
 		)
 		(property "Value" "22µF"
-			(at 217.17 99.0599 0)
+			(at 238.76 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3015,7 +3117,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 214.3252 101.6 0)
+			(at 235.9152 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3025,8 +3127,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 213.36 97.79 0)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/490_Chip_Multilayer_CAT2021_MLCC.pdf"
+			(at 234.95 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3036,8 +3138,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 213.36 97.79 0)
+		(property "Description" "Capacitor, 22µF, 16V, X7R, 20%, 1206"
+			(at 234.95 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3047,8 +3149,8 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" ""
-			(at 213.36 97.79 0)
+		(property "Digikey Part Number" "490-GRM31CZ71C226ME15LCT-ND"
+			(at 234.95 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3058,8 +3160,8 @@
 				)
 			)
 		)
-		(property "Digikey URL" ""
-			(at 213.36 97.79 0)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM31CZ71C226ME15L/13904808"
+			(at 234.95 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3069,8 +3171,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 213.36 97.79 0)
+		(property "Manufacturer" "Murata Electronics"
+			(at 234.95 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3080,8 +3182,8 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" ""
-			(at 213.36 97.79 0)
+		(property "Manufacturer Part Number" "GRM31CZ71C226ME15L"
+			(at 234.95 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3179,6 +3281,132 @@
 			(project "manraj-buck-converter"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 204.47 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e759b9c2-71fc-4c5b-a65a-41ced1b3e71b")
+		(property "Reference" "C6"
+			(at 208.28 83.8199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47pF"
+			(at 208.28 86.3599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 205.4352 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf"
+			(at 204.47 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, 47pF, 50V, C0G, 5%, 0603, AEC-Q200"
+			(at 204.47 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "445-5636-1-ND"
+			(at 204.47 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/tdk/CGA3E2C0G1H470J080AA/2443114"
+			(at 204.47 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 204.47 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "CGA3E2C0G1H470J080AA"
+			(at 204.47 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7b44d9ca-9904-44c5-af8e-6132d6fc3aa0")
+		)
+		(pin "2"
+			(uuid "4ac8fb70-b8d6-4644-be16-9e867186bf0a")
+		)
+		(instances
+			(project "manraj-buck-converter"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -3470,7 +3698,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 222.25 77.47 180)
+		(at 243.84 77.47 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3481,7 +3709,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe7bcd42-6888-4d33-8d25-25b6f2806750")
 		(property "Reference" "#FLG03"
-			(at 222.25 79.375 0)
+			(at 243.84 79.375 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3492,7 +3720,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 222.25 82.55 0)
+			(at 243.84 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3502,7 +3730,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 77.47 0)
+			(at 243.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3513,7 +3741,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 77.47 0)
+			(at 243.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3524,7 +3752,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 222.25 77.47 0)
+			(at 243.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
