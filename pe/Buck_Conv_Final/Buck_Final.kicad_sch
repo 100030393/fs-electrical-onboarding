@@ -1967,7 +1967,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "D_Schottky_Small"
+		(property "Value" ""
 			(at 190.5 63.2459 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2001,6 +2001,50 @@
 			)
 		)
 		(property "Description" "Schottky diode, small symbol"
+			(at 187.96 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 187.96 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 187.96 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 187.96 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 187.96 62.23 0)
 			(hide yes)
 			(show_name no)
