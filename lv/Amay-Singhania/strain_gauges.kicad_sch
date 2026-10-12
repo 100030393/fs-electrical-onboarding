@@ -1,0 +1,1458 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "9168bc47-dc82-4acf-9689-d07ec8a92964")
+	(paper "A4")
+	(lib_symbols
+		(symbol "AD8222:AD8222HACPZ-R7"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 30.48 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "AD8222HACPZ-R7"
+				(at 30.48 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "CP_16_19_ADI"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8222-KGD.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "AD8222HACPZ-R7"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_16_19_ADI CP_16_19_ADI-M CP_16_19_ADI-L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AD8222HACPZ-R7_0_1"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -40.64)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -40.64) (xy 53.34 -40.64)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 53.34 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 53.34 -40.64) (xy 53.34 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 7.62)
+					(name "-IN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 60.96 -33.02 180)
+					(length 7.62)
+					(name "RG1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 60.96 -30.48 180)
+					(length 7.62)
+					(name "RG1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "+IN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "+VS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -12.7 0)
+					(length 7.62)
+					(name "REF1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -15.24 0)
+					(length 7.62)
+					(name "REF2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -17.78 0)
+					(length 7.62)
+					(name "-VS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -20.32 0)
+					(length 7.62)
+					(name "+IN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 60.96 -12.7 180)
+					(length 7.62)
+					(name "RG2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 60.96 -10.16 180)
+					(length 7.62)
+					(name "RG2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -27.94 0)
+					(length 7.62)
+					(name "-IN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -30.48 0)
+					(length 7.62)
+					(name "-VS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 60.96 -2.54 180)
+					(length 7.62)
+					(name "OUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 60.96 0 180)
+					(length 7.62)
+					(name "OUT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "+VS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "AD8222:AD8222HACPZ-R7")
+		(at 21.59 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50abb713-42b2-4624-a9eb-5c6e86d8ffee")
+		(property "Reference" "U4"
+			(at 52.07 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "AD8222HACPZ-R7"
+			(at 52.07 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "AD8222:CP_16_19_ADI"
+			(at 21.59 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8222-KGD.pdf"
+			(at 21.59 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 21.59 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 21.59 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 21.59 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 21.59 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 21.59 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "12"
+			(uuid "9b0d75c0-1580-4997-bcf5-f4e8f25a23bc")
+		)
+		(pin "6"
+			(uuid "b80a31f3-a857-4500-8b82-22d8612a9768")
+		)
+		(pin "3"
+			(uuid "6c3de4eb-5ec0-48f7-a83d-a800ab749e63")
+		)
+		(pin "1"
+			(uuid "b1151efc-bff8-45c5-b05e-5b0ed9f909ce")
+		)
+		(pin "14"
+			(uuid "04b1f046-14b2-4706-82d6-3d8fbc95cba9")
+		)
+		(pin "15"
+			(uuid "b96f8952-b8c9-4b3b-a7fd-11a6e6f48d38")
+		)
+		(pin "16"
+			(uuid "bfc071d2-0cd5-4c63-9f93-5dd03847b0dc")
+		)
+		(pin "7"
+			(uuid "661f6bb4-6241-4e6d-8d1f-e1e968819bb2")
+		)
+		(pin "10"
+			(uuid "f146c019-ab3e-4d77-ba68-e22b6c5d450e")
+		)
+		(pin "11"
+			(uuid "fde21a74-a03f-4cc5-aee0-bf312a7eebcf")
+		)
+		(pin "8"
+			(uuid "3ba5b0b2-ec21-47d0-84a5-fa148dad861c")
+		)
+		(pin "9"
+			(uuid "7528f96e-db88-4253-9896-030037a392cf")
+		)
+		(pin "5"
+			(uuid "11659232-9155-4c74-9f2a-53ecfb75d9e5")
+		)
+		(pin "4"
+			(uuid "63e246ac-776b-480b-9ea9-540ec1859fd0")
+		)
+		(pin "2"
+			(uuid "5b08f61e-b6c0-4599-a595-99694d842d74")
+		)
+		(pin "13"
+			(uuid "d6548630-6005-46a6-b6ab-fd747a0f8a68")
+		)
+		(instances
+			(project "Amay-Singhania"
+				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "AD8222:AD8222HACPZ-R7")
+		(at 21.59 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79c4537e-01c2-474e-a800-0c7e3632352c")
+		(property "Reference" "U2"
+			(at 52.07 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "AD8222HACPZ-R7"
+			(at 52.07 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "AD8222:CP_16_19_ADI"
+			(at 21.59 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8222-KGD.pdf"
+			(at 21.59 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 21.59 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 21.59 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 21.59 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 21.59 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 21.59 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "12"
+			(uuid "c6a7622d-931d-4edd-8388-7fcb4ce9ae18")
+		)
+		(pin "6"
+			(uuid "ee8f5d57-c118-424d-aee2-7be7646d77ca")
+		)
+		(pin "3"
+			(uuid "4a79314c-7c8f-489b-8b36-b965270fb98e")
+		)
+		(pin "1"
+			(uuid "07e8dd49-8f84-4d2a-9bd8-c97d964d7ae4")
+		)
+		(pin "14"
+			(uuid "2bf7bd4b-8a88-4416-b306-bc466612e907")
+		)
+		(pin "15"
+			(uuid "0d4f664f-8180-4429-8d19-cefae87f4cc5")
+		)
+		(pin "16"
+			(uuid "0c4016e3-fbe8-4f20-8c9f-26c9fe0a0bbc")
+		)
+		(pin "7"
+			(uuid "8f463499-55b5-4d50-b401-6e0208a6728e")
+		)
+		(pin "10"
+			(uuid "ce76b638-932e-420c-8128-26475cfb0d1c")
+		)
+		(pin "11"
+			(uuid "cccda776-ed24-425e-b0fb-56221726e30c")
+		)
+		(pin "8"
+			(uuid "16db5c1c-9adc-464c-a104-de7e4d9e7292")
+		)
+		(pin "9"
+			(uuid "06a0b5c3-a45b-4d98-8003-1bcff938de00")
+		)
+		(pin "5"
+			(uuid "5b2eecd4-a330-47fe-9eaf-0337f2961450")
+		)
+		(pin "4"
+			(uuid "fe8abe1f-2bdc-4f51-b0ba-e7f77142fef1")
+		)
+		(pin "2"
+			(uuid "ff4af834-5d9d-41eb-a770-29e309750adf")
+		)
+		(pin "13"
+			(uuid "77a27b72-daa6-4846-b368-3751ad4e623e")
+		)
+		(instances
+			(project "Amay-Singhania"
+				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "AD8222:AD8222HACPZ-R7")
+		(at 201.93 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "978e1511-427c-43ff-be7e-80db8e4ee809")
+		(property "Reference" "U7"
+			(at 232.41 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "AD8222HACPZ-R7"
+			(at 232.41 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "AD8222:CP_16_19_ADI"
+			(at 201.93 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8222-KGD.pdf"
+			(at 201.93 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 201.93 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 201.93 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 201.93 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 201.93 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 201.93 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "12"
+			(uuid "d98095fe-b5ed-4b71-82c1-144ae8020c9e")
+		)
+		(pin "6"
+			(uuid "5085dd90-c665-4b4e-929d-21b44bfbc771")
+		)
+		(pin "3"
+			(uuid "1e333fad-6a4a-43a3-b932-f1bb1ddce689")
+		)
+		(pin "1"
+			(uuid "31342da4-0e24-4406-8f48-122f57eef284")
+		)
+		(pin "14"
+			(uuid "a5ad9b46-6c38-43fb-9fd2-c785ad3d683b")
+		)
+		(pin "15"
+			(uuid "2716b2b9-9515-41c4-b090-5c45e057e787")
+		)
+		(pin "16"
+			(uuid "cbe0f8d8-e93e-428f-aa0e-4a2673ca5e27")
+		)
+		(pin "7"
+			(uuid "2ab2a504-5f7f-4fc1-b5ad-962e2002f9ab")
+		)
+		(pin "10"
+			(uuid "46ee5b47-f6f9-4b6b-bb1a-81757cbc4a4b")
+		)
+		(pin "11"
+			(uuid "16a2df85-10e3-40c2-92e4-8fd21549dd9a")
+		)
+		(pin "8"
+			(uuid "d9c530ee-7981-48b1-ab1c-c493c0adcdec")
+		)
+		(pin "9"
+			(uuid "06882fbb-6553-463a-b539-22344b6d2009")
+		)
+		(pin "5"
+			(uuid "fed96577-0437-497e-8791-888c47e30daf")
+		)
+		(pin "4"
+			(uuid "d2c27bf3-599a-4d34-90b4-53dfbd2c4c8b")
+		)
+		(pin "2"
+			(uuid "aed25078-941c-48ec-8196-76a1fa4c3838")
+		)
+		(pin "13"
+			(uuid "30f701a4-b0b9-4f26-a1c6-7f01c4e1601e")
+		)
+		(instances
+			(project "Amay-Singhania"
+				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "AD8222:AD8222HACPZ-R7")
+		(at 200.66 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a52dadba-2e9c-4af4-b369-0c98ae36a9bb")
+		(property "Reference" "U6"
+			(at 231.14 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "AD8222HACPZ-R7"
+			(at 231.14 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "AD8222:CP_16_19_ADI"
+			(at 200.66 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8222-KGD.pdf"
+			(at 200.66 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 200.66 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 200.66 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 200.66 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 200.66 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "12"
+			(uuid "55cd9c11-fd97-4c17-8803-670fd49c1b89")
+		)
+		(pin "6"
+			(uuid "2681f633-8de4-42f9-b087-6e1ac25c274a")
+		)
+		(pin "3"
+			(uuid "b6a22ae9-4718-4761-b8b3-2594db4d1020")
+		)
+		(pin "1"
+			(uuid "532af114-f915-4712-abfc-2105ee240bc6")
+		)
+		(pin "14"
+			(uuid "0c3dd7c5-45a5-4d08-bfd1-67fa6343f4d8")
+		)
+		(pin "15"
+			(uuid "1a53df37-0776-4ae8-a221-c3ab8e93a16a")
+		)
+		(pin "16"
+			(uuid "5d264b00-4267-4131-bdbf-84d15402d035")
+		)
+		(pin "7"
+			(uuid "ad22e063-0149-4b89-a018-dcf0545a8e4a")
+		)
+		(pin "10"
+			(uuid "9112eb3e-3be2-4aa5-8542-1615022a8c3f")
+		)
+		(pin "11"
+			(uuid "616482ac-ed4e-4ea3-a223-7c04c845663b")
+		)
+		(pin "8"
+			(uuid "77c5c699-378e-4bea-a150-07355964566c")
+		)
+		(pin "9"
+			(uuid "6ba5c054-9086-417d-82ed-c996e345cf67")
+		)
+		(pin "5"
+			(uuid "023b119f-09b1-465a-93b9-10034667bc26")
+		)
+		(pin "4"
+			(uuid "502187f8-2608-401c-8f89-2c80f23d8962")
+		)
+		(pin "2"
+			(uuid "47a7323e-46d9-41ff-a50a-a00693b28cdb")
+		)
+		(pin "13"
+			(uuid "3ca521aa-e8e8-481b-accc-6fa73d84ea19")
+		)
+		(instances
+			(project "Amay-Singhania"
+				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "AD8222:AD8222HACPZ-R7")
+		(at 113.03 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b72af7e8-57ea-4bf9-a92c-bf32a1b33848")
+		(property "Reference" "U3"
+			(at 143.51 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "AD8222HACPZ-R7"
+			(at 143.51 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "AD8222:CP_16_19_ADI"
+			(at 113.03 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8222-KGD.pdf"
+			(at 113.03 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 113.03 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 113.03 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 113.03 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 113.03 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "12"
+			(uuid "53076b40-a8e8-4f69-b8c8-af76aa358d4e")
+		)
+		(pin "6"
+			(uuid "d33bd5f6-6445-4ccb-8d11-8ec1be046362")
+		)
+		(pin "3"
+			(uuid "cf149c1e-950b-4bd0-9754-761db78748b6")
+		)
+		(pin "1"
+			(uuid "45f41ab4-0ac7-4dee-89ae-fa0ea105facf")
+		)
+		(pin "14"
+			(uuid "c9f9202f-7114-44d4-8429-7bd711f1ff76")
+		)
+		(pin "15"
+			(uuid "ed38b913-6db3-4b66-8b60-c33f5d14e77c")
+		)
+		(pin "16"
+			(uuid "33d4b84c-6d88-4faa-b0b9-e889f4450079")
+		)
+		(pin "7"
+			(uuid "6e4c2b88-56a1-4671-93b2-aaf2089437f7")
+		)
+		(pin "10"
+			(uuid "12ee42f5-d40d-4464-baaf-fdc02b456f8b")
+		)
+		(pin "11"
+			(uuid "776eed2f-74d5-4b42-b68a-584547f144fc")
+		)
+		(pin "8"
+			(uuid "fbca135a-0157-4413-bad5-30191f16a607")
+		)
+		(pin "9"
+			(uuid "cf2e3988-37e0-4f96-8a4c-2f3b49b32687")
+		)
+		(pin "5"
+			(uuid "7fbdb171-bd4d-493c-b4b4-589d9efc3583")
+		)
+		(pin "4"
+			(uuid "984720c6-1a05-4b77-b116-4214e5c8bed1")
+		)
+		(pin "2"
+			(uuid "28511f3b-6842-4113-abf6-1a2bb702dcc5")
+		)
+		(pin "13"
+			(uuid "97ef5bda-9198-45be-bedd-a1f9ddbf2c98")
+		)
+		(instances
+			(project "Amay-Singhania"
+				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "AD8222:AD8222HACPZ-R7")
+		(at 114.3 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc0ca891-6369-488c-a4a3-c66fe0156ec1")
+		(property "Reference" "U5"
+			(at 144.78 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "AD8222HACPZ-R7"
+			(at 144.78 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "AD8222:CP_16_19_ADI"
+			(at 114.3 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8222-KGD.pdf"
+			(at 114.3 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 114.3 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 114.3 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 114.3 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "12"
+			(uuid "77f8a7e0-bebc-4718-8a8f-3818bc830970")
+		)
+		(pin "6"
+			(uuid "a1568b89-823c-4c1a-8600-077d70e34b99")
+		)
+		(pin "3"
+			(uuid "45220be8-4ca6-4596-8cd9-3e8a32bccedb")
+		)
+		(pin "1"
+			(uuid "d110a78e-6e10-4f5f-a92a-0474b7a3ad97")
+		)
+		(pin "14"
+			(uuid "3c036c35-8308-4f0d-8916-d28d82e81f82")
+		)
+		(pin "15"
+			(uuid "ada8a83c-1f1e-43d0-838e-aabbc0f63d6f")
+		)
+		(pin "16"
+			(uuid "dd85fa54-055b-4d7c-9356-05e98362aaa9")
+		)
+		(pin "7"
+			(uuid "ef6b7456-f363-4017-8676-117c8d052448")
+		)
+		(pin "10"
+			(uuid "e9ba71a0-5b9d-4cf4-a30e-545d3e3f0f28")
+		)
+		(pin "11"
+			(uuid "1c42b1b3-e833-4301-a7bb-e86d029360fb")
+		)
+		(pin "8"
+			(uuid "9677a88b-d863-44db-ab82-0a36dcf04e43")
+		)
+		(pin "9"
+			(uuid "13a45b6e-4fe8-41e5-9a0c-fe2b48f14752")
+		)
+		(pin "5"
+			(uuid "b973bae6-80d4-485a-b749-767ba577833a")
+		)
+		(pin "4"
+			(uuid "6a8df4f8-9be2-4c29-bcef-0ff70f5f3393")
+		)
+		(pin "2"
+			(uuid "156fa199-5ec7-40c8-bd13-9c29430acaef")
+		)
+		(pin "13"
+			(uuid "7c243829-dcb0-4457-a8e7-66f1ac8d7a08")
+		)
+		(instances
+			(project "Amay-Singhania"
+				(path "/7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "2")
+		)
+	)
+)

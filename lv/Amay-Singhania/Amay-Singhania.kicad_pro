@@ -756,6 +756,30 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer Part Number",
+          "name": "Manufacturer Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey Part Number",
+          "name": "Digikey Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey URL",
+          "name": "Digikey URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -833,15 +857,24 @@
         "filename": "Amay-Singhania.kicad_sch",
         "name": "Amay-Singhania",
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
+      },
+      {
+        "filename": "strain_gauges.kicad_sch",
+        "name": "Amplifiers",
+        "uuid": "7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
       }
     ],
-    "used_designators": "#PWR1-6,R1-4",
+    "used_designators": "U1-7,S3-7,#PWR1-16,R1-21",
     "variants": []
   },
   "sheets": [
     [
       "e994741c-7c7d-4124-9d00-43b883baa61d",
       "Amay-Singhania"
+    ],
+    [
+      "7454f931-1bd2-4f2e-90f3-3bbf92ce07ed",
+      "Amplifiers"
     ]
   ],
   "text_variables": {

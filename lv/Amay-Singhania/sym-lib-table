@@ -1,4 +1,6 @@
 (sym_lib_table
-  (version 7)
-  (lib (name "formula_slug_symbol_library")(type "KiCad")(uri "${KIPRJMOD}/../fs-components/formula_slug_symbol_library.kicad_sym")(options "")(descr ""))
+	(version 7)
+	(lib (name "formula_slug_symbol_library") (type "KiCad") (uri "${KIPRJMOD}/../fs-components/formula_slug_symbol_library.kicad_sym") (options "") (descr ""))
+	(lib (name "ADS127L18") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/ul_PADS127L18IRSHR/KiCADv6/2026-10-09_01-53-41.kicad_sym") (options "") (descr ""))
+	(lib (name "AD8222") (type "KiCad") (uri "/Users/amaysinghania/Desktop/Coding/FS/fs-electrical-onboarding/lv/ul_AD8222HACPZ-R7/KiCADv6/2026-10-12_07-09-31.kicad_sym") (options "") (descr ""))
 )
