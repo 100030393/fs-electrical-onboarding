@@ -5,6 +5,9 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
+
+// connects each pedal sensor to its pin when the controller is created -y
+
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) :
 apps1(APPS1_pin), apps2(APPS2_pin) {}
 
@@ -12,6 +15,9 @@ apps1(APPS1_pin), apps2(APPS2_pin) {}
     Nice function to write which returns a wrapped version of the
     value given between 0 and 1 (-0.1 => 0, 10 => 1, 0.3 => 0.3).
 */
+
+// stops a value from going below 0 or above 1 -y
+
 float ETCController::clamp(float value) {
     if (value < 0.0f) {
         return 0.0f;
@@ -26,6 +32,9 @@ float ETCController::clamp(float value) {
     Simple function to write which returns a bool of true or false
     depending on whether low <= value <= high is true.
 */
+
+// true if value is between low and high, otherwise false -y
+
 bool ETCController::in_range(float value, float low, float high) {
         return (low <= value) && (value <= high);
 }
