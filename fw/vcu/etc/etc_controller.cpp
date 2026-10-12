@@ -56,7 +56,8 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
-
+apps1_voltage = apps1.read() * 3.3f;
+apps2_voltage = apps2.read() * 3.3f;
 
     /*
         Finish the step listed above.
