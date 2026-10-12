@@ -1,0 +1,46 @@
+FPC Suspension Strain Gauge Research:
+
+Strain Gauges are small sensors that measures how much an object stretches or compresses. It is made on foil where it is shaped into a zig zag pattern that allows it to sense the strain.
+They sit on a thin insulating material that can support the foil grid while not getting in the way.
+Then at the end of the sensor are two points for electrical leads that connect to the sensor.
+
+If the metal stretches on the sensor then it increases its resistance, whilel if it compresses then it decreases resistance.
+
+This is done with the equation: R= p*(L/A)
+
+Strain is measured by strain = deltaL/Original Length
+So if the bar is 100mm long and it stretches by .1mm then it would be .1/100=.001
+
+Relationship with resistance and strain:
+deltaR/R = G * strain
+(G = Gauge Factor)
+
+Trace length for 350 ohms:
+
+R= p*L/(w*t)
+
+p = copper's resistivity at 1.68*10^-8 ohm*m (Found on this site: http://hyperphysics.phy-astr.gsu.edu/hbase/Tables/rstiv.html)
+L is the trace length
+w is the trace width (3 mil = .0762mm)
+t is the copper thickness
+
+rearrange equation for L:
+L = R*w*t/p
+
+Length with 12 micrometer of copper thickness which has a 3mil minimum width:
+L = 350 * (7.62*10^-5)*(1.2*10^-5)/(1.68*10^-8) = Roughly 19.05m
+
+Length with 18 micrometer:
+w = .0889 mm
+t = 1.8*10^-5
+
+L = 350 * (8.89*10^-5)*(1.8*10^-5)/(1.68*10^-8) = roughly 33.34m
+
+Length with 35 micrometers:
+w = .1016mm
+t = 3.5*10^-5
+
+L = 350 * (1.016*10^-5)*(3.5*10^-5)/(1.68*10^-8) = roughly 74.00m
+
+
+
