@@ -1,8 +1,9 @@
+#include "PinNames.h"
 #include "etc_controller.h"
 #include "mbed.h"
 #include <cstdio>
 
-ETCController etc{/* INSERT PIN NAMES FOR APPS 1 & 2 */};
+ETCController etc{PC_1, PC_2};
 
 CAN can{PB_8, PB_9, 500000};
 
