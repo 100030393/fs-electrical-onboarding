@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "8f1891b3-3eb5-4313-a3e3-3312050f3a76")
-	(paper "A4")
+	(paper "A")
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -1677,6 +1677,50 @@
 				)
 			)
 		)
+		(property "Digi PN" "399-C0603C104M5RACTUTR-ND"
+			(at 121.92 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/kemet/C0603C104M5RACTU/2199782"
+			(at 121.92 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG PN" "C0603C104M5RACTU"
+			(at 121.92 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG" "KEMET"
+			(at 121.92 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "69e8755d-c48e-4d8c-bb59-ca4ab56d38c5")
 		)
@@ -1749,6 +1793,50 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 123.19 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi PN" "587-4967-2-ND"
+			(at 123.19 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/taiyo-yuden/UMK316B7225ML-T/6563560"
+			(at 123.19 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG PN" "UMK316B7225ML-T"
+			(at 123.19 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG" "Taiyo Yuden"
 			(at 123.19 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -1909,6 +1997,50 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 158.75 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC31X5R226M25NT/25974946"
+			(at 158.75 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi PN" "4713-GMC31X5R226M25NTTR-ND"
+			(at 158.75 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG" "Cal-Chip Electronics, Inc."
+			(at 158.75 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG PN" "GMC31X5R226M25NT"
 			(at 158.75 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -2157,6 +2289,50 @@
 				)
 			)
 		)
+		(property "Digi PN" "4713-GMC31X5R226M25NTTR-ND"
+			(at 148.59 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC31X5R226M25NT/25974946"
+			(at 148.59 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG" "Cal-Chip Electronics, Inc."
+			(at 148.59 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG PN" "GMC31X5R226M25NT"
+			(at 148.59 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b38f69cc-4835-4920-99ad-38ecbfaafd5b")
 		)
@@ -2273,7 +2449,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "73.2kΩ"
 			(at 135.89 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2344,7 +2520,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdb66a49-5278-411b-9561-476e73af0032")
-		(property "Reference" "L1"
+		(property "Reference" "L"
 			(at 129.54 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2354,7 +2530,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "6.8uH"
 			(at 129.54 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2397,6 +2573,50 @@
 				)
 			)
 		)
+		(property "Digi PN" "553-BWVS006060456R8M00TR-ND"
+			(at 129.54 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/pulse-electronics/BWVS006060456R8M00/12140983"
+			(at 129.54 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG" "Pulse Electronics"
+			(at 129.54 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG PN" "BWVS006060456R8M00"
+			(at 129.54 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "be05eacf-2350-4166-a481-185f4eed96bb")
 		)
@@ -2406,7 +2626,7 @@
 		(instances
 			(project "fsproj"
 				(path "/8f1891b3-3eb5-4313-a3e3-3312050f3a76"
-					(reference "L1")
+					(reference "L")
 					(unit 1)
 				)
 			)
@@ -2435,7 +2655,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "15kΩ"
 			(at 135.89 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2695,7 +2915,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps56339.pdf"
+		(property "Datasheet" ""
 			(at 102.87 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -2706,7 +2926,51 @@
 				)
 			)
 		)
-		(property "Description" "4.5V to 24V Input, 3-A Output Synchronous Buck Converter, SOT-23-6"
+		(property "Description" ""
+			(at 102.87 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi URL" "https://www.digikey.com/en/products/detail/stmicroelectronics/DCP3603ACMR/29698022"
+			(at 102.87 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi PN" "497-DCP3603ACMRTR-ND"
+			(at 102.87 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG PN" "DCP3603ACMR"
+			(at 102.87 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFG" "STMicroelectronics"
 			(at 102.87 71.12 0)
 			(hide yes)
 			(show_name no)
