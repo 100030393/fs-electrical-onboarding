@@ -862,9 +862,14 @@
         "filename": "strain_gauges.kicad_sch",
         "name": "Amplifiers",
         "uuid": "7454f931-1bd2-4f2e-90f3-3bbf92ce07ed"
+      },
+      {
+        "filename": "adc.kicad_sch",
+        "name": "ADC",
+        "uuid": "2703b853-1807-4830-9fd4-a1d2c7f88a1f"
       }
     ],
-    "used_designators": "U1-7,S3-7,#PWR1-16,R1-21",
+    "used_designators": "J1,U1-7,S3-7,#PWR1-30,C1-12,R1-24",
     "variants": []
   },
   "sheets": [
@@ -875,6 +880,10 @@
     [
       "7454f931-1bd2-4f2e-90f3-3bbf92ce07ed",
       "Amplifiers"
+    ],
+    [
+      "2703b853-1807-4830-9fd4-a1d2c7f88a1f",
+      "ADC"
     ]
   ],
   "text_variables": {
