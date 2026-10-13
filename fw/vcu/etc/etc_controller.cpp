@@ -15,11 +15,11 @@ float ETCController::clamp(float value) {
     if (value < 0.0f) {
         return 0.0f;
     }
-    elif (value > 1.0f) {
+    else if (value > 1.0f) {
         return 1.0f;
     }
     else {
-        return value
+        return value;
     }
 }
 
@@ -27,7 +27,9 @@ float ETCController::clamp(float value) {
     Simple function to write which returns a bool of true or false
     depending on whether low <= value <= high is true.
 */
-bool ETCController::in_range(float value, float low, float high) {}
+bool ETCController::in_range(float value, float low, float high) {
+    return (value >= low && value <= high);
+}
 
 /*
     Complicated method with the goal of refreshing voltages,
