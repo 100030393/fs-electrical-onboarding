@@ -42,7 +42,7 @@ void send_etc_CAN_messages() {
     
     // initialize byte array to 0;
     for (int byte = 0; byte < 8; byte++) {
-        vcu_tpdo_status[byte] = 0x00;
+        vcu_tpdo_status[byte] = {0x00};
     }
 
     // sets bit 0 and bit 1 to 1
@@ -72,7 +72,25 @@ void send_etc_CAN_messages() {
     message with SME_THROTL_TorqueDemand set to the
     torque demand determined by the ETC.
 */
-void send_sme_CAN_messages() {}
+void send_sme_CAN_messages() {
+    uint8_t sme_rdpo_throttle_demand[8];
+
+    // Initialize byte array to 0
+    for (int byte = 0; byte < 8; byte++) {
+        sme_rdpo_throttle_demand[byte] = {0x00};
+    }
+
+    // first byte of demand message is set to Most Significant Byte of 16-bit calculation
+    sme_rdpo_throttle_demand[0] = (etc.calculated_torque >> 8) & 0xFF;
+
+    // second byte of demand message is set to the Least Significant Byte of 16-bit calculation
+    sme_rdpo_throttle_demand[1] = (etc.calculated_torque & 0xFF);
+
+
+    // create and write CAN message
+    CANMessage status_msg{390, sme_rdpo_throttle_demand, 8};
+    can.write(status_msg);
+}
 
 /*
     CAN NODE - has CAN tranceiver that feeds its output into the MCU.
