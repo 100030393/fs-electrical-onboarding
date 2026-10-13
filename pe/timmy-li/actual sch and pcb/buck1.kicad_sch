@@ -1023,16 +1023,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "5V/2A"
-		(exclude_from_sim no)
-		(at 140.208 74.676 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4239bdde-ad56-408e-8551-085878909182")
-	)
 	(junction
 		(at 96.52 97.79)
 		(diameter 0)
@@ -1779,7 +1769,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://belfuse.com/media/datasheets/products/chokes-coils-inductors/ds-ST-F1C1-3225-series.pdf"
 			(at 115.57 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -1801,7 +1791,7 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" ""
+		(property "Digikey Part Number" "595-F1C1-322510-2R2MTR-ND"
 			(at 115.57 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -1812,7 +1802,7 @@
 				)
 			)
 		)
-		(property "Digikey URL" ""
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/signal-transformer/F1C1-322510-2R2M/22530386"
 			(at 115.57 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -1823,7 +1813,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Signal Transformer"
 			(at 115.57 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -1834,7 +1824,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "F1C1-322510-2R2M"
 			(at 115.57 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -1904,7 +1894,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X5R_4V-TO-50V"
 			(at 73.66 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1926,7 +1916,7 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" ""
+		(property "Digikey Part Number" "311-3494-2-ND"
 			(at 73.66 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1937,7 +1927,7 @@
 				)
 			)
 		)
-		(property "Digikey URL" ""
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/CC0603MRX5R8BB106/7164378?s=N4IgTCBcDaIMwEYEFo4BYCcbkoHIBEQBdAXyA"
 			(at 73.66 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1948,7 +1938,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" " YAGEO"
 			(at 73.66 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1959,7 +1949,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" " CC0603MRX5R8BB106"
 			(at 73.66 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2395,7 +2385,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://1drv.ms/b/c/17a1402ff6a71331/IQCAeqNat8yzR75IgBaxqL_KAZGK2zs81mGDuJqTP0rzcW0?e=wLV0LF"
 			(at 129.54 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2417,7 +2407,7 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" ""
+		(property "Digikey Part Number" "6639-MH0603A226M100N8RCZATR-ND"
 			(at 129.54 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2428,7 +2418,7 @@
 				)
 			)
 		)
-		(property "Digikey URL" ""
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/sunway-communication/MH0603A226M100N8RCZA/29783836"
 			(at 129.54 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2439,7 +2429,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Sunway Communication"
 			(at 129.54 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2450,7 +2440,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "MH0603A226M100N8RCZA"
 			(at 129.54 81.28 0)
 			(hide yes)
 			(show_name no)
