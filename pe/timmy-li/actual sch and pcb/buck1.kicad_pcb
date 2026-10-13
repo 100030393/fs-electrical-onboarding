@@ -138,7 +138,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "51663c6c-e02e-4724-b2b7-9c857b4e759b")
-		(at 117 99.5 -90)
+		(at 117 100.5 -90)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R1"
@@ -319,7 +319,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U1-VOS)")
+			(net "Output 5V{slash}2A")
 			(pintype "passive")
 			(uuid "9c10c5ef-cf13-49b8-ab7b-5f7997a3514f")
 		)
@@ -348,7 +348,7 @@
 	(footprint "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "56e2ea0a-aa96-4601-90a2-e5ca3025a976")
-		(at 114 100 180)
+		(at 113.4075 100 180)
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C3"
@@ -497,14 +497,14 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias"
+	(footprint "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm_ThermalVias"
 		(layer "F.Cu")
 		(uuid "5f1be285-0612-43b1-9cdd-9c13dd9947d0")
-		(at 114.655 102.865)
-		(descr "VQFN, 16 Pin (http://www.ti.com/lit/ds/symlink/tlv62095.pdf)")
+		(at 114.91 103.75)
+		(descr "VQFN, 16 Pin (https://www.st.com/resource/en/datasheet/stspin220.pdf)")
 		(tags "VQFN NoLead")
 		(property "Reference" "U1"
-			(at -0.655 2.635 0)
+			(at 0 -2.83 0)
 			(layer "F.SilkS")
 			(uuid "cb5f69fe-9c18-4e0f-a78d-3d02a8a28756")
 			(effects
@@ -515,7 +515,7 @@
 			)
 		)
 		(property "Value" "TPS62143"
-			(at 0 3.135 0)
+			(at 0 2.83 0)
 			(layer "F.Fab")
 			(uuid "eff2610b-5298-4e7e-b167-6a11a3222c46")
 			(effects
@@ -525,7 +525,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/TPS62140.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps62140.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1791857792273&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftps62140"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -574,8 +574,18 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
+			(start -1.61 -1.61)
+			(end -1.135 -1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7afcc570-f8ac-4cbf-94f3-03ca0f9d864a")
+		)
+		(fp_line
 			(start -1.61 -1.135)
-			(end -1.61 -1.37)
+			(end -1.61 -1.61)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -592,16 +602,6 @@
 			)
 			(layer "F.SilkS")
 			(uuid "128b790f-308b-4500-94fb-9b34a64cc99f")
-		)
-		(fp_line
-			(start -1.313241 -1.61)
-			(end -1.135 -1.61)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7afcc570-f8ac-4cbf-94f3-03ca0f9d864a")
 		)
 		(fp_line
 			(start -1.135 1.61)
@@ -655,7 +655,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -1.61 -1.61) (xy -1.85 -1.94) (xy -1.37 -1.94)
+				(xy -2.14 -0.75) (xy -2.47 -0.51) (xy -2.47 -0.99)
 			)
 			(stroke
 				(width 0.12)
@@ -889,36 +889,36 @@
 			)
 		)
 		(pad "" smd roundrect
-			(at -0.42 -0.42)
-			(size 0.73 0.73)
-			(layers "F.Paste")
-			(roundrect_rratio 0.25)
-			(uuid "49893e5a-d959-4bc8-9ffd-bd65ca3bdbb4")
-		)
-		(pad "" smd roundrect
-			(at -0.42 0.42)
-			(size 0.73 0.73)
+			(at -0.45 -0.45)
+			(size 0.78 0.78)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "9f05013f-364d-4179-948a-f4fbf980f79e")
 		)
 		(pad "" smd roundrect
-			(at 0.42 -0.42)
-			(size 0.73 0.73)
+			(at -0.45 0.45)
+			(size 0.78 0.78)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "03c66549-acb4-4ebc-ab81-74159fa999dd")
 		)
 		(pad "" smd roundrect
-			(at 0.42 0.42)
-			(size 0.73 0.73)
+			(at 0.45 -0.45)
+			(size 0.78 0.78)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "4d166bb7-97c2-4488-b4c6-f3556776ed24")
 		)
+		(pad "" smd roundrect
+			(at 0.45 0.45)
+			(size 0.78 0.78)
+			(layers "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "49893e5a-d959-4bc8-9ffd-bd65ca3bdbb4")
+		)
 		(pad "1" smd roundrect
-			(at -1.4625 -0.75)
-			(size 0.825 0.25)
+			(at -1.4875 -0.75)
+			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(L1-Pad1)")
@@ -927,8 +927,8 @@
 			(uuid "5c7c48ef-6efe-4291-a8e0-6ac9a0067a16")
 		)
 		(pad "2" smd roundrect
-			(at -1.4625 -0.25)
-			(size 0.825 0.25)
+			(at -1.4875 -0.25)
+			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(L1-Pad1)")
@@ -937,8 +937,8 @@
 			(uuid "6af589b9-f895-483f-8033-2fae8ea55e5b")
 		)
 		(pad "3" smd roundrect
-			(at -1.4625 0.25)
-			(size 0.825 0.25)
+			(at -1.4875 0.25)
+			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(L1-Pad1)")
@@ -947,8 +947,8 @@
 			(uuid "a5c231ed-2d6b-4fd3-b716-e6cb2b132e93")
 		)
 		(pad "4" smd roundrect
-			(at -1.4625 0.75)
-			(size 0.825 0.25)
+			(at -1.4875 0.75)
+			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-PG)")
@@ -957,8 +957,8 @@
 			(uuid "70fb3d59-082e-44ec-b182-9eacd5b81ef7")
 		)
 		(pad "5" smd roundrect
-			(at -0.75 1.4625)
-			(size 0.25 0.825)
+			(at -0.75 1.4875)
+			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -967,8 +967,8 @@
 			(uuid "18dcbf84-1d62-4c68-82f3-45e33561a2a8")
 		)
 		(pad "6" smd roundrect
-			(at -0.25 1.4625)
-			(size 0.25 0.825)
+			(at -0.25 1.4875)
+			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -977,8 +977,8 @@
 			(uuid "9cef83ed-f38e-441c-bf45-c2af6076352a")
 		)
 		(pad "7" smd roundrect
-			(at 0.25 1.4625)
-			(size 0.25 0.825)
+			(at 0.25 1.4875)
+			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -987,8 +987,8 @@
 			(uuid "5a0f0b43-2678-4e31-b22b-a4ba9cbebe0d")
 		)
 		(pad "8" smd roundrect
-			(at 0.75 1.4625)
-			(size 0.25 0.825)
+			(at 0.75 1.4875)
+			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -997,8 +997,8 @@
 			(uuid "8e2579c2-e42a-4bf7-9066-dda410bc33ec")
 		)
 		(pad "9" smd roundrect
-			(at 1.4625 0.75)
-			(size 0.825 0.25)
+			(at 1.4875 0.75)
+			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U1-SS{slash}TR)")
@@ -1007,58 +1007,58 @@
 			(uuid "0f5d9b95-3ec6-4976-b57c-9a8b5ebda9dd")
 		)
 		(pad "10" smd roundrect
-			(at 1.4625 0.25)
-			(size 0.825 0.25)
+			(at 1.4875 0.25)
+			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U1-EN)")
+			(net "Input 5-17V")
 			(pinfunction "VIN_10")
 			(pintype "power_in")
 			(uuid "fe566c9d-752a-44ba-93dd-cf4f5d09c5d1")
 		)
 		(pad "11" smd roundrect
-			(at 1.4625 -0.25)
-			(size 0.825 0.25)
+			(at 1.4875 -0.25)
+			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U1-EN)")
+			(net "Input 5-17V")
 			(pinfunction "VIN_11")
 			(pintype "passive")
 			(uuid "99e0d4e3-b71a-43ff-b364-7277c15c0515")
 		)
 		(pad "12" smd roundrect
-			(at 1.4625 -0.75)
-			(size 0.825 0.25)
+			(at 1.4875 -0.75)
+			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U1-EN)")
+			(net "Input 5-17V")
 			(pinfunction "VIN_12")
 			(pintype "passive")
 			(uuid "b0398df2-6aac-46a2-bcfa-85d098df3b73")
 		)
 		(pad "13" smd roundrect
-			(at 0.75 -1.4625)
-			(size 0.25 0.825)
+			(at 0.75 -1.4875)
+			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U1-EN)")
+			(net "Input 5-17V")
 			(pinfunction "EN_13")
 			(pintype "input")
 			(uuid "bbe31dcc-7575-4964-a805-7e3e49ba71c2")
 		)
 		(pad "14" smd roundrect
-			(at 0.25 -1.4625)
-			(size 0.25 0.825)
+			(at 0.25 -1.4875)
+			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(U1-VOS)")
+			(net "Output 5V{slash}2A")
 			(pinfunction "VOS_14")
 			(pintype "input")
 			(uuid "7413e0d0-b612-44ec-bca6-6b6fe70b0309")
 		)
 		(pad "15" smd roundrect
-			(at -0.25 -1.4625)
-			(size 0.25 0.825)
+			(at -0.25 -1.4875)
+			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -1067,8 +1067,8 @@
 			(uuid "c9644787-947e-476d-8027-3701ee2b94da")
 		)
 		(pad "16" smd roundrect
-			(at -0.75 -1.4625)
-			(size 0.25 0.825)
+			(at -0.75 -1.4875)
+			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -1077,7 +1077,7 @@
 			(uuid "3c9d776f-a65f-4a05-ba94-5c0c9b677b8c")
 		)
 		(pad "17" thru_hole circle
-			(at -0.59 -0.59)
+			(at -0.65 -0.65)
 			(size 0.5 0.5)
 			(drill 0.2)
 			(property pad_prop_heatsink)
@@ -1089,7 +1089,7 @@
 			(uuid "aaf4a99c-b8d2-42b0-8f05-fe8c7647c9c4")
 		)
 		(pad "17" thru_hole circle
-			(at -0.59 0.59)
+			(at -0.65 0.65)
 			(size 0.5 0.5)
 			(drill 0.2)
 			(property pad_prop_heatsink)
@@ -1102,7 +1102,7 @@
 		)
 		(pad "17" smd rect
 			(at 0 0)
-			(size 1.68 1.68)
+			(size 1.8 1.8)
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask")
 			(net "GND")
@@ -1113,7 +1113,7 @@
 		)
 		(pad "17" smd rect
 			(at 0 0)
-			(size 1.68 1.68)
+			(size 1.8 1.8)
 			(property pad_prop_heatsink)
 			(layers "B.Cu")
 			(net "GND")
@@ -1123,7 +1123,7 @@
 			(uuid "c572f783-2112-4bb5-ba0b-efc0dd6634f5")
 		)
 		(pad "17" thru_hole circle
-			(at 0.59 -0.59)
+			(at 0.65 -0.65)
 			(size 0.5 0.5)
 			(drill 0.2)
 			(property pad_prop_heatsink)
@@ -1135,7 +1135,7 @@
 			(uuid "fecb0934-1f06-4ca7-831a-e4d805e3c5d4")
 		)
 		(pad "17" thru_hole circle
-			(at 0.59 0.59)
+			(at 0.65 0.65)
 			(size 0.5 0.5)
 			(drill 0.2)
 			(property pad_prop_heatsink)
@@ -1147,7 +1147,7 @@
 			(uuid "2822b933-a508-4d68-a889-8dd61b667a22")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.step"
+		(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1162,7 +1162,7 @@
 	(footprint "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "747b8609-70bc-418e-a490-983ec2d49ca9")
-		(at 112 103.5 -90)
+		(at 111 103.5 -90)
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C1"
@@ -1187,7 +1187,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X5R_4V-TO-50V"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1221,7 +1221,7 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" ""
+		(property "Digikey Part Number" "311-3494-2-ND"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1234,7 +1234,7 @@
 				)
 			)
 		)
-		(property "Digikey URL" ""
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/CC0603MRX5R8BB106/7164378?s=N4IgTCBcDaIMwEYEFo4BYCcbkoHIBEQBdAXyA"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1247,7 +1247,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" " YAGEO"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1260,7 +1260,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" " CC0603MRX5R8BB106"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1337,7 +1337,7 @@
 			(size 0.635 0.4)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net "Net-(U1-EN)")
+			(net "Input 5-17V")
 			(pintype "passive")
 			(uuid "2c904ddd-c235-44b4-8774-47bf226d0828")
 		)
@@ -1366,7 +1366,7 @@
 	(footprint "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "af711fcc-f538-4c33-85e4-e4e9cebba3c1")
-		(at 119.5 104.5 -90)
+		(at 120 104.5 -90)
 		(descr "Inductor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "inductor handsolder")
 		(property "Reference" "L1"
@@ -1391,7 +1391,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://belfuse.com/media/datasheets/products/chokes-coils-inductors/ds-ST-F1C1-3225-series.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1425,7 +1425,7 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" ""
+		(property "Digikey Part Number" "595-F1C1-322510-2R2MTR-ND"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1438,7 +1438,7 @@
 				)
 			)
 		)
-		(property "Digikey URL" ""
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/signal-transformer/F1C1-322510-2R2M/22530386"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1451,7 +1451,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Signal Transformer"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1464,7 +1464,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "F1C1-322510-2R2M"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1556,7 +1556,7 @@
 			(size 1.425 2.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.175439)
-			(net "Net-(U1-VOS)")
+			(net "Output 5V{slash}2A")
 			(pintype "passive")
 			(uuid "ea1668f7-a59d-40df-8adb-9119fef6e87b")
 		)
@@ -1576,7 +1576,7 @@
 	(footprint "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "c70384eb-af5b-4c3b-9459-8136b8b1d9b6")
-		(at 116 106 180)
+		(at 116 107.5 180)
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C2"
@@ -1601,7 +1601,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://1drv.ms/b/c/17a1402ff6a71331/IQCAeqNat8yzR75IgBaxqL_KAZGK2zs81mGDuJqTP0rzcW0?e=wLV0LF"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1635,7 +1635,7 @@
 				)
 			)
 		)
-		(property "Digikey Part Number" ""
+		(property "Digikey Part Number" "6639-MH0603A226M100N8RCZATR-ND"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1648,7 +1648,7 @@
 				)
 			)
 		)
-		(property "Digikey URL" ""
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/sunway-communication/MH0603A226M100N8RCZA/29783836"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1661,7 +1661,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Sunway Communication"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1674,7 +1674,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part Number" ""
+		(property "Manufacturer Part Number" "MH0603A226M100N8RCZA"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1751,7 +1751,7 @@
 			(size 0.635 0.4)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net "Net-(U1-VOS)")
+			(net "Output 5V{slash}2A")
 			(pintype "passive")
 			(uuid "ee82e047-fc93-47a3-82d8-41a42aaad18e")
 		)
