@@ -36,8 +36,8 @@ private:
 
     AnalogIn apps1;
     AnalogIn apps2;
-    float apps_voltage = 0.0f;
-    float apps_voltage = 0.0f;
+    float apps1_voltage = 0.0f;
+    float apps2_voltage = 0.0f;
     float apps1_pedal_position = 0.0f;
     float apps2_pedal_position = 0.0f;
 
