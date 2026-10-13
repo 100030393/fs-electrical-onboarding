@@ -138,7 +138,7 @@
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "51663c6c-e02e-4724-b2b7-9c857b4e759b")
-		(at 118 102.675 -90)
+		(at 117 99.5 -90)
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R1"
@@ -348,11 +348,11 @@
 	(footprint "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "56e2ea0a-aa96-4601-90a2-e5ca3025a976")
-		(at 112 102.5675 90)
+		(at 113 100 180)
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C3"
-			(at -1.4325 0 180)
+			(at 1.5 -0.5 180)
 			(layer "F.SilkS")
 			(uuid "976d36bd-a359-409e-8fbf-ceb0079b7eff")
 			(effects
@@ -363,7 +363,7 @@
 			)
 		)
 		(property "Value" "3.3nF"
-			(at 0 1.05 90)
+			(at 0 1.05 0)
 			(layer "F.Fab")
 			(uuid "5c0be83e-36ee-4724-848a-ecacd7f43395")
 			(effects
@@ -374,7 +374,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9b9c3ed5-d2fb-4d7a-a022-0eb0cb4811ff")
@@ -385,7 +385,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4119ceed-fd46-4ea8-9304-ebe2973b241e")
@@ -396,7 +396,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a723f080-c8ef-4aa1-afb5-83c3321b819c")
@@ -442,7 +442,7 @@
 			(uuid "b944431a-387e-45f5-958a-1ed9d3fe3894")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 90)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(uuid "c39122a0-abac-49a0-94bd-2eb70a4e7130")
 			(effects
@@ -453,21 +453,21 @@
 			)
 		)
 		(pad "" smd roundrect
-			(at -0.4325 0 90)
+			(at -0.4325 0 180)
 			(size 0.458 0.36)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "6819d1d3-d62e-4124-91a8-38b65bb50493")
 		)
 		(pad "" smd roundrect
-			(at 0.4325 0 90)
+			(at 0.4325 0 180)
 			(size 0.458 0.36)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "de27a42c-4931-4581-98ba-fdb8e2f23545")
 		)
 		(pad "1" smd roundrect
-			(at -0.4075 0 90)
+			(at -0.4075 0 180)
 			(size 0.635 0.4)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -476,7 +476,7 @@
 			(uuid "bf7f7010-5296-4df7-a69f-2e9fc70e95b5")
 		)
 		(pad "2" smd roundrect
-			(at 0.4075 0 90)
+			(at 0.4075 0 180)
 			(size 0.635 0.4)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -515,7 +515,7 @@
 			)
 		)
 		(property "Value" "TPS62143"
-			(at 0 2.83 0)
+			(at 0 3.135 0)
 			(layer "F.Fab")
 			(uuid "eff2610b-5298-4e7e-b167-6a11a3222c46")
 			(effects
@@ -1162,11 +1162,11 @@
 	(footprint "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "747b8609-70bc-418e-a490-983ec2d49ca9")
-		(at 111 102.5675 90)
+		(at 111.5 103.5 -90)
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C1"
-			(at 1.5675 0 180)
+			(at 1.5675 0 0)
 			(layer "F.SilkS")
 			(uuid "e9b5dfd3-aa38-4254-8d7f-306dc09be550")
 			(effects
@@ -1222,7 +1222,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1235,7 +1235,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1248,7 +1248,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1261,7 +1261,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1319,21 +1319,21 @@
 			)
 		)
 		(pad "" smd roundrect
-			(at -0.4325 0 90)
+			(at -0.4325 0 270)
 			(size 0.458 0.36)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "9af135fb-c63c-42e6-a344-6373ff2e033f")
 		)
 		(pad "" smd roundrect
-			(at 0.4325 0 90)
+			(at 0.4325 0 270)
 			(size 0.458 0.36)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "f762b053-c016-46b7-8a19-067e2e6082f0")
 		)
 		(pad "1" smd roundrect
-			(at -0.4075 0 90)
+			(at -0.4075 0 270)
 			(size 0.635 0.4)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -1342,7 +1342,7 @@
 			(uuid "2c904ddd-c235-44b4-8774-47bf226d0828")
 		)
 		(pad "2" smd roundrect
-			(at 0.4075 0 90)
+			(at 0.4075 0 270)
 			(size 0.635 0.4)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -1366,11 +1366,11 @@
 	(footprint "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "af711fcc-f538-4c33-85e4-e4e9cebba3c1")
-		(at 114.5125 99)
+		(at 119.5 104.5 90)
 		(descr "Inductor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "inductor handsolder")
 		(property "Reference" "L1"
-			(at 0 -2.28 0)
+			(at 0 -2.28 90)
 			(layer "F.SilkS")
 			(uuid "a4093ec6-83f2-4bde-afbd-fda8bdbdba99")
 			(effects
@@ -1381,7 +1381,7 @@
 			)
 		)
 		(property "Value" "2.2uH"
-			(at 0 2.28 0)
+			(at 0 2.28 90)
 			(layer "F.Fab")
 			(uuid "2a127fd3-1713-4a53-ac76-f614454c87b6")
 			(effects
@@ -1392,7 +1392,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6e8744b7-cd9f-49c9-83d0-f3d42826420b")
@@ -1403,7 +1403,7 @@
 			)
 		)
 		(property "Description" "Inductor, small symbol"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c651db8d-a8cd-43d4-a023-80a46572c9a7")
@@ -1414,7 +1414,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "6af918f6-bdab-4115-b2f5-a5262a5ad87c")
@@ -1426,7 +1426,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1439,7 +1439,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1452,7 +1452,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1465,7 +1465,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1532,7 +1532,7 @@
 			(uuid "1c71f1a5-2bb8-4cb4-b9d6-a3f80ef6d076")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "e39c87af-cb8f-443f-a240-da98d1d07425")
 			(effects
@@ -1543,7 +1543,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1.4875 0)
+			(at -1.4875 0 90)
 			(size 1.425 2.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.175439)
@@ -1552,7 +1552,7 @@
 			(uuid "b539e7a0-2d36-49f6-8b31-da224a1f33b8")
 		)
 		(pad "2" smd roundrect
-			(at 1.4875 0)
+			(at 1.4875 0 90)
 			(size 1.425 2.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.175439)
@@ -1576,11 +1576,11 @@
 	(footprint "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "c70384eb-af5b-4c3b-9459-8136b8b1d9b6")
-		(at 119.5 102.9325 -90)
+		(at 115.5 106)
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C2"
-			(at 1.5675 0 180)
+			(at 1.5675 0 90)
 			(layer "F.SilkS")
 			(uuid "1c00ad32-08f3-40d4-aebe-90d8b7b41e82")
 			(effects
@@ -1591,7 +1591,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 0 1.05 90)
+			(at 0 1.05 0)
 			(layer "F.Fab")
 			(uuid "00226bc9-1d26-47d7-ad54-1cc8b42b74f6")
 			(effects
@@ -1602,7 +1602,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9e5d3bde-5f79-47c9-9270-56ce6e33c255")
@@ -1613,7 +1613,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2f95de47-8721-4aeb-b67f-0a0d4c159ae0")
@@ -1624,7 +1624,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "292f8157-0bc8-4d22-9f6c-2d7a9388aaac")
@@ -1636,7 +1636,7 @@
 			)
 		)
 		(property "Digikey Part Number" ""
-			(at 0 0 270)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1649,7 +1649,7 @@
 			)
 		)
 		(property "Digikey URL" ""
-			(at 0 0 270)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1662,7 +1662,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 0 0 270)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1675,7 +1675,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" ""
-			(at 0 0 270)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1722,7 +1722,7 @@
 			(uuid "63261139-6721-4981-b88a-c37b93217cc6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 90)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(uuid "d0190380-1e66-4d1d-a7a1-44d1ef3a8acb")
 			(effects
@@ -1733,21 +1733,21 @@
 			)
 		)
 		(pad "" smd roundrect
-			(at -0.4325 0 270)
+			(at -0.4325 0)
 			(size 0.458 0.36)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "fdd04bbb-0b8d-4644-afe6-ee6e97598c25")
 		)
 		(pad "" smd roundrect
-			(at 0.4325 0 270)
+			(at 0.4325 0)
 			(size 0.458 0.36)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "0408cf6a-7696-4f1d-ae76-ef06efe602db")
 		)
 		(pad "1" smd roundrect
-			(at -0.4075 0 270)
+			(at -0.4075 0)
 			(size 0.635 0.4)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
@@ -1756,7 +1756,7 @@
 			(uuid "ee82e047-fc93-47a3-82d8-41a42aaad18e")
 		)
 		(pad "2" smd roundrect
-			(at 0.4075 0 270)
+			(at 0.4075 0)
 			(size 0.635 0.4)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
