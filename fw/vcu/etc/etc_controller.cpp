@@ -58,7 +58,24 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
+    // get both sensor voltages
+    apps1_voltage = apps1.read_voltage();
+    apps2_voltage = apps2.read_voltage();
 
+    // calculate pedal position based off voltage
+    apps1_travel = clamp((apps1_voltage - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
+    apps2_travel = clamp((apps2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
+
+    // average travel
+    float avg_travel = (apps1_travel + apps2_travel) / 2.0f;
+
+    // deadzone (cut-off method)
+    if (avg_travel < PEDAL_DEADZONE_PERCENTAGE) {
+        avg_travel = 0.0f;
+    }
+
+    // calculate torque
+    motor_torque_demand = static_cast<int16_t>(avg_travel * MAX_TORQUE);
 
     /*
         Finish the step listed above.
@@ -66,6 +83,9 @@ void ETCController::update_state() {
 
     // Here to simplify this function and readability.
     update_implausibilities();
+    if (implaus_apps_out_of_range || implaus_apps_deviation) {
+        motor_torque_demand = 0;
+    }
 }
 
 /*
