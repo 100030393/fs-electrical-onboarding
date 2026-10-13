@@ -22,6 +22,9 @@ fp-info-cache
 ~*.lck
 \#auto_saved_files#
 
+# Build files
+/build/
+
 # Netlist files (exported from Eeschema)
 *.net
 

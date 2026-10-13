@@ -5,7 +5,17 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {}
+ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) : apps1(APPS1_pin), apps2(APPS2_pin) {
+    motor_torque_demand  = {0};
+    implaus_apps_out_of_range = false;
+    implaus_apps_deviation = false;
+
+    apps1_voltage = 0.0f;
+    apps2_voltage = 0.0f;
+
+    apps1_travel = 0.0f;
+    apps2_travel = 0.0f;
+}
 
 /* 
     Nice function to write which returns a wrapped version of the

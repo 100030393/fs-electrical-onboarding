@@ -1,0 +1,11 @@
+{
+    "cmake.configureEnvironment": {
+        "PATH": "/opt/homebrew/bin:${env:PATH}"
+    },
+    "cmake.configureSettings": {
+        "CMAKE_C_COMPILER": "/opt/homebrew/bin/arm-none-eabi-gcc",
+        "CMAKE_CXX_COMPILER": "/opt/homebrew/bin/arm-none-eabi-g++",
+        "CMAKE_TRY_COMPILE_TARGET_TYPE": "STATIC_LIBRARY"
+    },
+    "cmake.sourceDirectory": "/Users/yadpreet/Developer/formula-slug/fs-electrical-onboarding/fw/vcu"
+}

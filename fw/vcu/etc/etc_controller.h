@@ -14,6 +14,9 @@ public:
         Start of public variables
     */
 
+    int16_t motor_torque_demand;
+    bool implaus_apps_out_of_range;
+    bool implaus_apps_deviation;
 
 
     /*
@@ -32,6 +35,16 @@ private:
         Start of private variables
     */
 
+    AnalogIn apps1;
+    AnalogIn apps2;
+
+    Timer out_of_range_timer;
+    Timer deviation_timer;
+
+    float apps1_voltage = 0.0f;
+    float apps2_voltage = 0.0f;
+    float apps1_travel = 0.0f;
+    float apps2_travel = 0.0f;
 
     /*
         End of private variables

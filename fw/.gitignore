@@ -12,6 +12,7 @@ build/
 # VS Code config files
 **/.vscode/launch.json
 **/.vscode/tasks.json
+.vscode
 
 # Python stuff
 *.pyc
