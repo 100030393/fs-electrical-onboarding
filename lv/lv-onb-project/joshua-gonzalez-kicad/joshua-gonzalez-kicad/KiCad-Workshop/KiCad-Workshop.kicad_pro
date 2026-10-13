@@ -755,14 +755,50 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey URL",
+          "name": "Digikey URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer Part Number",
+          "name": "Manufacturer Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey Part Number",
+          "name": "Digikey Part Number",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "Footprint"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
