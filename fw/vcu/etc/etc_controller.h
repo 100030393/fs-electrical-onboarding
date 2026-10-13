@@ -9,8 +9,8 @@
 
 Timer implaus1_timer;
 Timer implaus2_timer;
-Timer implaus3_timer;
-Timer implaus4_timer;
+// Timer implaus3_timer;
+// Timer implaus4_timer;
 
 class ETCController {
 public:
@@ -36,30 +36,29 @@ private:
         Start of private variables
     */
    //input variables
-    float apps1_voltage;
-    float apps2_voltage;
+    float apps1_voltage = 0.0f;
+    float apps2_voltage = 0.0f;
 
     //implaus variables
         //fault types
-    bool apps1_out_of_range;
-    bool apps2_out_of_range;
-    bool pre_offset_apps_is_matching;
-    bool post_offset_apps_is_matching;
-    bool implaus_1;
-    bool implaus_2;
-    bool implaus_3;
-    bool implaus_4;
-    
+    bool apps1_out_of_range = false;
+    bool apps2_out_of_range = false;
+    bool pre_offset_apps_is_matching = false;
+    bool post_offset_apps_is_matching = false;
+    bool implaus_1 = false;
+    bool implaus_2 = false;
+    // bool implaus_3 = false;
+    // bool implaus_4 = false;
 
-    bool gen_faulting;
-    bool gen_implaus;
-    int implaus_timer_count;
+
+    bool gen_faulting = false;
+    bool gen_implaus = false;
 
     //pedal position variables
     float apps_1_volt_increment = 0.0069;
-    int apps_1_pedal_position;
+    int apps_1_pedal_position = 0;
     float apps_2_volt_increment = 0.00694;
-    int apps_2_pedal_position;
+    int apps_2_pedal_position = 0;
 
     //torque variables
     int16_t torque_apps_1 = 0;
@@ -89,12 +88,12 @@ private:
     static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
     static constexpr float APPS2_MAX_VOLTAGE = 1.133f;
 
-    static constexpr float PEDAL_DEADZONE_PERCENTAGE = 0.03;
+    static constexpr float PEDAL_DEADZONE_PERCENTAGE = 3.0f;
 
     static constexpr int16_t MAX_TORQUE = 32767 * 0.1; // Multiplied by 0.1 for controlled 
                                                        // motor torque during onboarding.
 
-    float clamp(float value);
+    float clamp(float value , float min = 0, float max = 1);
 //im confused on clamp and in_range. if the value is outside the range, should we clamp it?
     bool in_range(float value, float low, float high);
 

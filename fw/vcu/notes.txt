@@ -8,6 +8,12 @@ to do:
             make some things const   
         probably a  more efficient way to write most code
 
+things done today
+    used clamp in pedal position calc
+    changed in_range implaus logic to or instead of seperate fault
+    change some things to best practice ie cant clear fault after fault occurs
+    fixed pin assgnment
+
 types of faults
     apps1 = apps2 - done
     apps1 or apps2 is outside range - done
