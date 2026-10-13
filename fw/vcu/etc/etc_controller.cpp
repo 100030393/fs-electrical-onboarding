@@ -5,7 +5,10 @@
 #include "etc_controller.h"
 
 // Assign appropriate GPIO objects depending on pin parameters
-ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin) {
+ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin)   
+   :    myread_1(APPS1_pin),
+        myread_2(APPS2_pin)
+{
 
 }
 
@@ -28,7 +31,7 @@ float ETCController::clamp(float value) {
     depending on whether low <= value <= high is true.
 */
 bool ETCController::in_range(float value, float low, float high) {
-    if (value <= high && value >== low) {
+    if (value <= high && value >= low) {
         return true;
     } else {
         return false;

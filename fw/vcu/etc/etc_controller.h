@@ -32,7 +32,8 @@ private:
         Start of private variables
     */
 
-    
+    AnalogIn myread_1;
+    AnalogIn myread_2;
 
     /*
         End of private variables
