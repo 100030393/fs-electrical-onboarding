@@ -2,6 +2,7 @@ Pretty simple, just recording the parts that I'm considering.
 Buck IC:
 1 - ADP2302ARDZ-5.0-R7
   https://www.digikey.com/en/products/detail/analog-devices-inc/ADP2302ARDZ-5-0-R7/2606527
+  - 
   - 5V, 2A output
   - 700 kHz switching frequency 
   - good price, has a list of suggested inductors and other parts(sweet)
@@ -14,5 +15,27 @@ Buck IC:
   - primarily an alternative if I want to try experimenting with more current, lower switching freq, etc.
     - #1 buck IC is the rogue, #2 is tank
 
-Inductors:
-in progress
+Both capa. and ind. values were taken from my own calculations and also a similar example design given in the datasheet from Buck IC
+Also the dimensions for the IC:
+
+Capacitor:
+https://www.digikey.com/en/products/detail/tdk/C3225X5R0J476M250AA/567576
+
+C3225X5R0J476M250AA
+47 micro Farads
+contains low ESL, which should be good?
+Inductor:
+https://www.digikey.com/en/products/detail/tai-tech-advanced-electronics-co-ltd/HPC-4018NF-4R7M/17835612
+
+HPC 4018NF-4R7M
+tolerance above 20%
+4.7 micro Henries
+0.157" L x 0.157" W (4.00mm x 4.00mm), 0.071"(1.80 mm) H max when seated
+current saturation 2A(not sure if this is good or bad, looking into it, or also look for a 3A inductor)
+voltage rating 6.7(kind of low? will also be looking more into this)
+honestly just using this as a placeholder, will continue searching
+Total estimated price: $5.50
+
+Kicad update:
+installed, learning
+found the buck ic in the library, just making sure it's all good
