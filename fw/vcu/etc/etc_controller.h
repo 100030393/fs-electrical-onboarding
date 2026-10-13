@@ -41,6 +41,8 @@ private:
     AnalogIn apps1;
     AnalogIn apps2;
 
+   
+
 // latest voltage and pedal position for each sensor, kept here so every fn can see them -y
 
     float apps1_voltage = 0.0f;
@@ -58,7 +60,7 @@ private:
         !! should always be checked and updated if wrong.   !!
     */
 
-    static constexpr float APPS1_MIN_VOLTAGE = 0.396;
+    static constexpr float APPS1_MIN_VOLTAGE = 0.39f;
     static constexpr float APPS1_MAX_VOLTAGE = 1.086f;
 
     static constexpr float APPS2_MIN_VOLTAGE = 0.439f;
@@ -68,6 +70,11 @@ private:
 
     static constexpr int16_t MAX_TORQUE = 32767 * 0.1; // Multiplied by 0.1 for controlled 
                                                        // motor torque during onboarding.
+
+    static constexpr float APPS_VOLTAGE_TOLERANCE = 0.1f;
+    static constexpr float APPS_DEVIATION_LIMIT = 0.10f;
+
+    static constexpr std::chrono::milliseconds APPS_TIME_LIMIT{100};
 
     float clamp(float value);
 
