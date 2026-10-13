@@ -352,7 +352,7 @@
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C3"
-			(at 1.5 -0.5 180)
+			(at 2 0 180)
 			(layer "F.SilkS")
 			(uuid "976d36bd-a359-409e-8fbf-ceb0079b7eff")
 			(effects
@@ -363,7 +363,7 @@
 			)
 		)
 		(property "Value" "3.3nF"
-			(at 0 1.05 0)
+			(at 0 1.5 0)
 			(layer "F.Fab")
 			(uuid "5c0be83e-36ee-4724-848a-ecacd7f43395")
 			(effects
@@ -504,7 +504,7 @@
 		(descr "VQFN, 16 Pin (http://www.ti.com/lit/ds/symlink/tlv62095.pdf)")
 		(tags "VQFN NoLead")
 		(property "Reference" "U1"
-			(at -0.155 2.635 0)
+			(at -0.655 2.635 0)
 			(layer "F.SilkS")
 			(uuid "cb5f69fe-9c18-4e0f-a78d-3d02a8a28756")
 			(effects
@@ -1370,7 +1370,7 @@
 		(descr "Inductor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "inductor handsolder")
 		(property "Reference" "L1"
-			(at 0 -2.28 90)
+			(at -3 -0.5 180)
 			(layer "F.SilkS")
 			(uuid "a4093ec6-83f2-4bde-afbd-fda8bdbdba99")
 			(effects
@@ -1381,7 +1381,7 @@
 			)
 		)
 		(property "Value" "2.2uH"
-			(at 0 2.28 90)
+			(at -4.5 0.5 180)
 			(layer "F.Fab")
 			(uuid "2a127fd3-1713-4a53-ac76-f614454c87b6")
 			(effects
@@ -1580,7 +1580,7 @@
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
 		(tags "capacitor handsolder")
 		(property "Reference" "C2"
-			(at 1.5675 0 90)
+			(at 0 1.5 180)
 			(layer "F.SilkS")
 			(uuid "1c00ad32-08f3-40d4-aebe-90d8b7b41e82")
 			(effects
@@ -1591,7 +1591,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 0 1.05 0)
+			(at 0 3 0)
 			(layer "F.Fab")
 			(uuid "00226bc9-1d26-47d7-ad54-1cc8b42b74f6")
 			(effects
