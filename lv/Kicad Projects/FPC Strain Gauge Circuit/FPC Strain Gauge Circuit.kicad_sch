@@ -2032,6 +2032,12 @@
 		(uuid "5c5eed58-4a14-47f8-9fe0-df0c7d11b110")
 	)
 	(junction
+		(at 49.53 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f6e93d4-b32c-41d9-9056-c7e9460b875e")
+	)
+	(junction
 		(at 100.33 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2495,6 +2501,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 81.28) (xy 72.39 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d328865-7eb7-4c1d-90ca-8d7131967595")
+	)
+	(wire
+		(pts
 			(xy 26.67 33.02) (xy 48.26 33.02)
 		)
 		(stroke
@@ -2545,7 +2561,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 81.28) (xy 72.39 81.28)
+			(xy 26.67 81.28) (xy 49.53 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3305,7 +3321,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 70.612 36.83 90)
 			(hide yes)
 			(show_name no)
@@ -4239,7 +4255,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
 			(at 24.892 36.83 90)
 			(hide yes)
 			(show_name no)
@@ -6473,6 +6489,84 @@
 			(project "FPC Strain Gauge Circuit"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d25b6075-811f-4a33-b1dc-68076b102746")
+		(property "Reference" "#PWR014"
+			(at 49.53 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AGND"
+			(at 49.53 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4bb388c9-b929-4382-b516-5812ae3fc4a0")
+		)
+		(instances
+			(project "FPC Strain Gauge Circuit"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
