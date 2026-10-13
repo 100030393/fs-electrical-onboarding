@@ -5,11 +5,11 @@
 	(uuid "e994741c-7c7d-4124-9d00-43b883baa61d")
 	(paper "A")
 	(title_block
-		(title "${BOARD_TITLE}")
+		(title "PE Buck Converter Onboarding Project")
 		(date "${CURRENT_DATE}")
 		(rev "${REVISION}")
 		(company "Formula Slug")
-		(comment 1 "${NAMES}")
+		(comment 1 "Maheer Grang")
 		(comment 2 "${COMMENT1}")
 		(comment 3 "${COMMENT2}")
 	)
@@ -978,6 +978,12 @@
 		)
 	)
 	(junction
+		(at 170.18 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0aaff671-d5fb-4086-a9de-e9bc59c0cc99")
+	)
+	(junction
 		(at 100.33 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -996,12 +1002,6 @@
 		(uuid "1fb383d0-e85b-4cb7-83a0-883153c9360d")
 	)
 	(junction
-		(at 170.18 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2f2d12cd-b423-4206-8f0e-c7b8a3031d8b")
-	)
-	(junction
 		(at 154.94 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1014,16 +1014,16 @@
 		(uuid "6d332f2e-0f8a-4461-9aba-a2313591ad20")
 	)
 	(junction
-		(at 85.09 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7e44f314-2ac1-4a72-8e13-5dcde1197360")
-	)
-	(junction
 		(at 170.18 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8f89dab6-d395-4bbf-a57f-46444ecc0dba")
+		(uuid "b019c0bc-2abb-4c40-adc2-100cd4d0e887")
+	)
+	(junction
+		(at 85.09 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3d6a26d-d593-4c96-8996-baf808feb79b")
 	)
 	(junction
 		(at 69.85 73.66)
@@ -1441,10 +1441,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "073f21fd-0797-4b3e-a180-89eb4db0a7d7")
 		(property "Reference" "C1"
-			(at 72.39 80.0162 0)
+			(at 72.136 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1454,8 +1453,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
-			(at 72.39 82.5562 0)
+		(property "Value" "10 µF"
+			(at 72.136 82.296 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1465,7 +1464,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 69.85 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1487,7 +1486,51 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "10 µF ±10% 25V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 69.85 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "490-6518-1-ND"
+			(at 69.85 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM31CR71E106KA12L/2345330"
+			(at 69.85 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 69.85 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "GRM31CR71E106KA12L"
 			(at 69.85 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1508,88 +1551,6 @@
 			(project "maheer-grang"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 170.18 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "183bd39e-e837-4b18-a0ca-b6a9a5dc4f32")
-		(property "Reference" "R3"
-			(at 172.72 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R_Small_US"
-			(at 172.72 81.2799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 170.18 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "b21ff949-adef-4da7-a326-5ed993e66773")
-		)
-		(pin "1"
-			(uuid "c0064bd3-1bf5-4a1e-907c-2968dac907a2")
-		)
-		(instances
-			(project "maheer-grang"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -1617,7 +1578,7 @@
 				)
 			)
 		)
-		(property "Value" "L_Small"
+		(property "Value" "B82464P4472M000"
 			(at 162.56 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1627,7 +1588,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_10.4x10.4_H4.8"
 			(at 162.56 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1649,7 +1610,51 @@
 				)
 			)
 		)
-		(property "Description" "Inductor, small symbol"
+		(property "Description" "4.7 µH, 5.2 A Isat, 15 mΩ max DCR, shielded drum core inductor"
+			(at 162.56 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "495-77086-1-ND"
+			(at 162.56 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 162.56 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 162.56 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "B82464P4472M000"
 			(at 162.56 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -1670,88 +1675,6 @@
 			(project "maheer-grang"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 170.18 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2331d94f-44d1-40e7-b3df-676dd165aa3b")
-		(property "Reference" "R4"
-			(at 172.72 95.2499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R_Small_US"
-			(at 172.72 97.7899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 170.18 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e26a2182-db03-49c5-a533-1b5eadacdd70")
-		)
-		(pin "1"
-			(uuid "6bb3b465-e7f7-429e-9833-c8963704106c")
-		)
-		(instances
-			(project "maheer-grang"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -1836,6 +1759,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 170.18 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2823da2c-134a-44e1-8211-db54e8c601c9")
+		(property "Reference" "R1"
+			(at 172.72 78.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56.2k"
+			(at 172.72 81.2799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 170.18 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 56.2K OHM 1% 1/10W 0603"
+			(at 170.18 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "311-56.2KHRCT-ND"
+			(at 170.18 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0756K2L/727303"
+			(at 170.18 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 170.18 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0603FR-0756K2L"
+			(at 170.18 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b7d6a1a-0ffc-4478-991d-608696bec7a9")
+		)
+		(pin "2"
+			(uuid "bb618641-da14-4f57-8ea7-7041021be867")
+		)
+		(instances
+			(project "maheer-grang"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 53.34 72.39 0)
 		(unit 1)
@@ -1908,88 +1957,6 @@
 			(project "maheer-grang"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 85.09 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38966d00-0751-498b-a2bf-0b3856d44ff2")
-		(property "Reference" "C2"
-			(at 87.63 80.0162 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_Small"
-			(at 87.63 82.5562 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 85.09 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f6584d9-6476-4eb9-a19f-51464b2f6c8e")
-		)
-		(pin "2"
-			(uuid "137e0a3f-3c5c-419c-8106-1bff396df6e2")
-		)
-		(instances
-			(project "maheer-grang"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -2075,7 +2042,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 100.33 95.25 0)
+		(at 170.18 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2084,9 +2051,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "41640ed7-90b6-4754-98e1-0ccf917f1925")
+		(uuid "3e17f74c-3bd6-4c2c-872f-11931bddf079")
 		(property "Reference" "R2"
-			(at 102.87 93.9799 0)
+			(at 172.72 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2096,8 +2063,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Small_US"
-			(at 102.87 96.5199 0)
+		(property "Value" "10K"
+			(at 172.72 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2107,8 +2074,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 100.33 95.25 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 170.18 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2119,7 +2086,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 95.25 0)
+			(at 170.18 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2129,8 +2096,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
-			(at 100.33 95.25 0)
+		(property "Description" "RES SMD 10K OHM 1% 1/10W 0603"
+			(at 170.18 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2140,11 +2107,55 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "aa3a9e30-28ee-4b73-a797-80dfa042d355")
+		(property "Digikey Part Number" "311-10KLDCT-ND"
+			(at 170.18 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0710KL/2827814"
+			(at 170.18 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 170.18 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "AC0603FR-0710KL"
+			(at 170.18 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "9f27b127-2cf1-4fe3-9928-870d5ee4953a")
+			(uuid "e32022e7-c32f-424a-a692-23a0c05bd054")
+		)
+		(pin "2"
+			(uuid "89abc64a-e792-4415-b9a7-3bf173cc6ec3")
 		)
 		(instances
 			(project "maheer-grang"
@@ -2256,7 +2267,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "22 µF"
 			(at 193.04 87.6362 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2267,7 +2278,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 190.5 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -2289,7 +2300,51 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "22 µF ±20% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
+			(at 190.5 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "478-KGM15CR51C226MTCT-ND"
+			(at 190.5 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "www.digikey.com/en/products/detail/kyocera-avx/0603YD226MAT2A/17866383"
+			(at 190.5 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 190.5 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "0603YD226MAT2A"
 			(at 190.5 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -2310,6 +2365,132 @@
 			(project "maheer-grang"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 100.33 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ea7a274-ef3e-4b82-90fe-e4310ecd9d09")
+		(property "Reference" "R4"
+			(at 102.87 93.9799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "32.4K"
+			(at 102.87 96.5199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 100.33 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "32.4 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film"
+			(at 100.33 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "13-AC0603FR-0732K4LCT-ND"
+			(at 100.33 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-0732K4L/5896034?s=N4IgTCBcDaIIIGEAMA2JBmAYgJQLRIHZ0wBpAFgBkQBdAXyA"
+			(at 100.33 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 100.33 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "AC0603FR-0732K4L"
+			(at 100.33 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33e26e1e-e2a4-4f17-a3ac-6e2ff385df1c")
+		)
+		(pin "2"
+			(uuid "404e8d8c-ce3d-4a80-95ff-438ce76e9a37")
+		)
+		(instances
+			(project "maheer-grang"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -2448,6 +2629,50 @@
 			)
 		)
 		(property "Description" "3A, 750kHz Buck DC/DC Converter, PFM for light load efficiency, 4.2V-18V input voltage, 0.8V-7V adjustable output voltage, TSOT-23-6"
+			(at 133.35 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" ""
+			(at 133.35 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 133.35 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 133.35 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
 			(at 133.35 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2642,6 +2867,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 100.33 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3bc7b1c-b1dd-41dd-af58-fa7215e1a637")
+		(property "Reference" "R3"
+			(at 102.87 81.2799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "221K"
+			(at 102.87 83.8199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 100.33 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES SMD 221K OHM 1% 1/10W 0603"
+			(at 100.33 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "13-AC0603FR-07221KLCT-ND"
+			(at 100.33 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/AC0603FR-07221KL/5895920?s=N4IgTCBcDaIIIGEAMA2JBmAYgJQLRIHYwwBGAaQBkQBdAXyA"
+			(at 100.33 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 100.33 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "AC0603FR-07221KL"
+			(at 100.33 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "430bbbec-a756-4b25-a03d-61b522274ec6")
+		)
+		(pin "2"
+			(uuid "066df953-4b7b-40ff-ba4e-f2eeffdca600")
+		)
+		(instances
+			(project "maheer-grang"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDREF")
 		(at 133.35 96.52 0)
 		(unit 1)
@@ -2720,8 +3071,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 100.33 82.55 0)
+		(lib_id "Device:C_Small")
+		(at 209.55 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2730,9 +3081,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "be2c65f3-08d9-451c-8193-8ca73f0eb314")
-		(property "Reference" "R1"
-			(at 102.87 81.2799 0)
+		(uuid "c396a2cf-8d7f-417e-89e7-70ce2015af87")
+		(property "Reference" "C5"
+			(at 212.09 85.0962 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2742,8 +3093,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_Small_US"
-			(at 102.87 83.8199 0)
+		(property "Value" "22 µF"
+			(at 212.09 87.6362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2753,8 +3104,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 100.33 82.55 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 209.55 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2765,7 +3116,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 82.55 0)
+			(at 209.55 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2775,8 +3126,52 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
-			(at 100.33 82.55 0)
+		(property "Description" "22 µF ±20% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
+			(at 209.55 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "478-KGM15CR51C226MTCT-ND"
+			(at 209.55 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "www.digikey.com/en/products/detail/kyocera-avx/0603YD226MAT2A/17866383"
+			(at 209.55 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 209.55 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "0603YD226MAT2A"
+			(at 209.55 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2787,15 +3182,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2a3a117b-a5b2-402d-b3c5-0c2f6ced0cbc")
+			(uuid "ccc55f31-d350-4027-b2fc-8118760498b2")
 		)
 		(pin "2"
-			(uuid "8aeef96e-79a1-43e4-b6f3-2609109694a9")
+			(uuid "7b69ae27-6659-4f4c-b7d0-944dee603b14")
 		)
 		(instances
 			(project "maheer-grang"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "R1")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -2881,6 +3276,131 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 85.09 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f8946bc1-7a47-49d1-86a8-6de234e5a3da")
+		(property "Reference" "C2"
+			(at 87.63 79.502 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 µF"
+			(at 87.63 81.534 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10 µF ±10% 25V Ceramic Capacitor X7R 1206 (3216 Metric)"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "490-6518-1-ND"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/murata-electronics/GRM31CR71E106KA12L/2345330"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "GRM31CR71E106KA12L"
+			(at 85.09 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "708721f4-b9c9-4b7f-a930-cfadd03a65b2")
+		)
+		(pin "2"
+			(uuid "41fe0b53-10f5-4c36-85db-c3d9aac2fba9")
+		)
+		(instances
+			(project "maheer-grang"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 149.86 81.28 90)
 		(unit 1)
 		(body_style 1)
@@ -2900,7 +3420,7 @@
 				)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "100 nF"
 			(at 149.86 77.216 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2910,7 +3430,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 149.86 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2932,7 +3452,51 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 149.86 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part Number" "311-1344-1-ND"
+			(at 149.86 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R9BB104/2103082?s=N4IgTCBcDaIMJwAwDZEGYDSAlAGgdiwE4AhYgRkQBYQBdAXyA"
+			(at 149.86 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 149.86 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "CC0603KRX7R9BB104"
 			(at 149.86 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -2953,88 +3517,6 @@
 			(project "maheer-grang"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 209.55 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc85bffa-8ade-4ffc-9d33-8ad45ff78ed0")
-		(property "Reference" "C5"
-			(at 212.09 85.0962 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_Small"
-			(at 212.09 87.6362 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 209.55 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 209.55 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 209.55 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3f069b4e-fd48-41cf-8030-648589860245")
-		)
-		(pin "1"
-			(uuid "c6599d23-5765-46f6-b3ec-bf8b28a805c5")
-		)
-		(instances
-			(project "maheer-grang"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "C5")
 					(unit 1)
 				)
 			)
