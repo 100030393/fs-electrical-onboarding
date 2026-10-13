@@ -60,6 +60,7 @@ apps1_voltage = apps1.read() * 3.3f;
 apps2_voltage = apps2.read() * 3.3f;
 apps1_pedal_position = clamp((apps1_voltage - APPS1_MIN_VOLTAGE) /(APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
 apps2_pedal_position = clamp((apps2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
+torque_demand = static_cast<int16_t>(((apps1_pedal_position + apps2_pedal_position) / 2.0f) * MAX_TORQUE);
 
     /*
         Finish the step listed above.
