@@ -14,10 +14,12 @@ public:
         Start of public variables
     */
 
-int16_t torque_demand = 0;
-bool apps_deviation_implaus = false;
-bool apps_range_implaus = false;
+//torque request and two safety flags that other code can read (public--main can read) -y
 
+int16_t torque_demand = 0; //final torque request, whole num, starts 0 -y
+bool apps_deviation_implaus = false; //true when the two sensors disagree. start false -y
+bool apps_range_implaus = false; // is true when sensor reads outside ranch -y
+ 
     /*
         End of public variables
     */
@@ -34,8 +36,13 @@ private:
         Start of private variables
     */
 
+// one reader for each pedal sensor, constructur gives their pins. (private --only this class) -y
+
     AnalogIn apps1;
     AnalogIn apps2;
+
+// latest voltage and pedal position for each sensor, kept here so every fn can see them -y
+
     float apps1_voltage = 0.0f;
     float apps2_voltage = 0.0f;
     float apps1_pedal_position = 0.0f;
