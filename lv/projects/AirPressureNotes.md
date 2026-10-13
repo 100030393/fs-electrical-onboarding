@@ -1,30 +1,31 @@
 Sensor example: https://www.digikey.com/en/products/detail/bosch-sensortec/BMP180/2688259
-> Specifications (from DigiKey and datasheet from Bosch)
-> - BMP180
-> - Pressure range: 300 - 1100hPa (+9000m - -500m)
-> - Supply voltage: 1.8V - 3.6V (VDD), 1.62V - 3.6V (VDDIO)
-> - Dimensions: 3.6mm x 3.8mm x 0.93mm
-> - Two wire I2C interface
-> - Board mount
-> - Absolute pressure type
-> - Accuracy: +-2%
-> - Termination style: SMD (SMT) tab
 
-> Pros
-> - MEMS (micro-electro mechanical system), used to measure pressure
-> - Commonly used with Arduinos, so there is a lot of support software-wise
-> - I2C compatibility
-> Cons
-> - Out of production, difficult to source
-> - "Decent" (mediocre?) resolution
-> - Difficult to interface multiple units with a single microcontroller due to a lack of address pins for I2C
+    Specifications (from DigiKey and datasheet from Bosch)
+    - BMP180
+    - Pressure range: 300 - 1100hPa (+9000m - -500m)
+    - Supply voltage: 1.8V - 3.6V (VDD), 1.62V - 3.6V (VDDIO)
+    - Dimensions: 3.6mm x 3.8mm x 0.93mm
+    - Two wire I2C interface
+    - Board mount
+    - Absolute pressure type
+    - Accuracy: +-2%
+    - Termination style: SMD (SMT) tab
 
-> Goals
-> - Resolution equal to or better than the original
-> - Communication or output interface that allows it to be banked with more pressure sensors
-> - Adequete software support
-> - Still in stock and manufactured
-> - Absolute pressure type, board mount to mirror previous application capacity and ability to be connected in an array
+    Pros
+    - MEMS (micro-electro mechanical system), used to measure pressure
+    - Commonly used with Arduinos, so there is a lot of support software-wise
+    - I2C compatibility
+    Cons
+    - Out of production, difficult to source
+    - "Decent" (mediocre?) resolution
+    - Difficult to interface multiple units with a single microcontroller due to a lack of address pins for I2C
+
+    Goals
+    - Resolution equal to or better than the original
+    - Communication or output interface that allows it to be banked with more pressure sensors
+    - Adequete software support
+    - Still in stock and manufactured
+    - Absolute pressure type, board mount to mirror previous application capacity and ability to be connected in an array
 
 Candidates
 Following filters:
@@ -32,6 +33,14 @@ Following filters:
 - Accuracy: >=2%
 - Applications: Board mount
 - Product status: Active
+
+Communication notes
+- I2C is the communication method from the exmaple, which has the benefit of being a bus-based system, but requires extra pins to set addresses. Without addresses, the maximum amount of pressure sensors on the same bus is two, and that's only if one of the address bits can be changed (which is not always the case)
+- SPI is another common form of the communication, and has the benefit of having no theoretical limit (no set clockspeed, depends on the sensors and relevant electronics used). Unfortunatly it does not have a bus system that uses addresses, preventing the straightforward implementation of multiple sensors without using a significant amount of pins.
+- Analog sensors send continuous data and lack the capacity for bidirectional communication required of bus-based implementation. While there are very technical ways to connect multiple of them in series, it would likely compromise the integrity of the communication and would instead requiring a copious amount of GPIO on the microcontroller to have an array of analog sensors.
+- 1-Wire is another solution that provides a means for communicating with multiple devices on the same communication line. It has an incredibly high capacity for multiple devices in the same network, but with the pretty significant downside of not being a commmon native output interface, making it difficult to find an applicable sensor within specification.
+    - One possible sub-solution would be to have communication intermediaries like the DS2482S-800, which is a micro-board that translates between 1-Wire and I2C, providing 8 unique sensor connections to a single I2C bus. The downside is the added point of failure and complexity of translating between outputs, alongside the presence of an additional board.
+- SENT is the common sensor communication method for vehicles which is a significant positive considering the nature of Formula Slug, however, its focus is on data resolution and has no support for multiple sensors on a single communication line. 
 
 MS561101BA03-50
 - Initially promising because of its significantly better pressure range, compact size, and accuracy of the sensor
