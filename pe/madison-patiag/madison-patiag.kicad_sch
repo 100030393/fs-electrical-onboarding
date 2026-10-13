@@ -1257,6 +1257,133 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 185.42 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c2262f0-b894-4d2c-a885-bb9cec4ea750")
+	)
+	(junction
+		(at 36.83 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "229964d6-4274-4eba-8950-d107d85e6018")
 	)
 	(junction
 		(at 149.86 48.26)
@@ -1287,6 +1414,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa2f040e-5211-4ee8-917a-abbb9cd3fa9d")
+	)
+	(junction
+		(at 195.58 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bbfbb51b-142f-4e1c-8a5f-9f158be696dd")
 	)
 	(junction
 		(at 127 48.26)
@@ -1324,6 +1457,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 48.26) (xy 195.58 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d183d72-7bbf-4d38-99c1-730196f1c1f2")
+	)
+	(wire
+		(pts
 			(xy 67.31 50.8) (xy 64.77 50.8)
 		)
 		(stroke
@@ -1341,6 +1484,16 @@
 			(type default)
 		)
 		(uuid "3eea97a0-56dd-495b-b74d-f13439c4fd47")
+	)
+	(wire
+		(pts
+			(xy 36.83 41.91) (xy 39.37 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "435d58bc-7d25-4db4-b642-78a11facfb08")
 	)
 	(wire
 		(pts
@@ -1514,7 +1667,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 41.91) (xy 39.37 41.91)
+			(xy 35.56 41.91) (xy 36.83 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1531,6 +1684,16 @@
 			(type default)
 		)
 		(uuid "e3255e0f-b9f9-4a68-86a0-e7ff02ebf7bf")
+	)
+	(wire
+		(pts
+			(xy 195.58 48.26) (xy 196.85 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e55ea74f-f2c5-40fb-acd9-eb843703ccb3")
 	)
 	(wire
 		(pts
@@ -1641,6 +1804,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 36.83 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1ee2a28e-c8e0-4f8e-a212-71bb5a93e200")
+		(property "Reference" "#FLG01"
+			(at 36.83 40.005 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 37.084 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 36.83 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5377a33f-6f77-42f3-8053-2b96032a9c9f")
+		)
+		(instances
+			(project "madison-patiag"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "2026-10-08_19-50-54:RT6215EHGJ8F")
 		(at 67.31 44.45 0)
 		(unit 1)
@@ -1672,7 +1912,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC_5EHGJ8F_RIT"
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-8_HandSoldering"
 			(at 67.31 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -1817,7 +2057,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 127.9652 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -1898,7 +2138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 51.7652 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -1979,7 +2219,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 163.5252 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -2037,7 +2277,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3e6ce86c-aea4-43da-b407-9dcc28f302ca")
 		(property "Reference" "#PWR02"
 			(at 39.37 41.91 0)
@@ -2051,7 +2290,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 34.29 39.37 90)
+			(at 29.972 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2136,7 +2375,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC_5EHGJ8F_RIT"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 117.094 39.624 90)
 			(hide yes)
 			(show_name no)
@@ -2215,7 +2454,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC_5EHGJ8F_RIT"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 59.944 48.006 90)
 			(hide yes)
 			(show_name no)
@@ -2265,7 +2504,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 185.42 48.26 270)
+		(at 196.85 48.26 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2273,10 +2512,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5eaa9d1e-426a-4863-82fb-85669e8b144e")
 		(property "Reference" "#PWR03"
-			(at 181.61 48.26 0)
+			(at 193.04 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2287,7 +2525,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 189.23 48.2599 90)
+			(at 199.644 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2298,7 +2536,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 48.26 0)
+			(at 196.85 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2309,7 +2547,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 48.26 0)
+			(at 196.85 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2320,7 +2558,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 185.42 48.26 0)
+			(at 196.85 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2375,7 +2613,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 40.3352 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -2456,7 +2694,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SOIC_5EHGJ8F_RIT"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 148.844 64.516 90)
 			(hide yes)
 			(show_name no)
@@ -2499,6 +2737,83 @@
 			(project "madison-patiag"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 195.58 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e6e8228-8088-4ddd-bcd4-96aa9a1332dc")
+		(property "Reference" "#FLG02"
+			(at 195.58 46.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 195.834 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 195.58 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "651ac619-6dcf-488c-a4a9-524c86287896")
+		)
+		(instances
+			(project "madison-patiag"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -2577,6 +2892,87 @@
 			(project "madison-patiag"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 185.42 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8b9578a8-86b1-4630-b60f-e36674b89778")
+		(property "Reference" "C_{out}3"
+			(at 188.468 51.054 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 188.468 53.594 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 186.3852 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 185.42 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ef6f0001-aed0-4cf3-925a-90a177860b92")
+		)
+		(pin "2"
+			(uuid "5a867d8f-043e-487a-b083-cd8bdf7fbb37")
+		)
+		(instances
+			(project "madison-patiag"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "C_{out}3")
 					(unit 1)
 				)
 			)
@@ -2693,7 +3089,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SOIC_5EHGJ8F_RIT"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 148.844 51.816 90)
 			(hide yes)
 			(show_name no)
@@ -2930,7 +3326,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 174.9552 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -3057,6 +3453,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 185.42 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f580033e-e573-4b62-bbed-22e960aac273")
+		(property "Reference" "#PWR09"
+			(at 185.42 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 185.42 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53bd0dec-9f6e-459e-8b77-bb599bc3f8ee")
+		)
+		(instances
+			(project "madison-patiag"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 140.97 48.26 90)
 		(unit 1)
@@ -3088,7 +3562,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_MD-4040"
 			(at 140.97 48.26 0)
 			(hide yes)
 			(show_name no)
