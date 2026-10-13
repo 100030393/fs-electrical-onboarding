@@ -959,7 +959,7 @@
 		)
 		(uuid "21adfb67-cfe2-46aa-a11e-51d41feebec3")
 	)
-	(label "V_in 13.5v"
+	(label "V_in 15v"
 		(at 67.31 83.82 0)
 		(effects
 			(font
@@ -991,7 +991,7 @@
 				)
 			)
 		)
-		(property "Value" "10.5uH"
+		(property "Value" "12uH"
 			(at 125.73 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
