@@ -56,10 +56,18 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
+    // reads each sensor as a 0 to 1 fractions, then multplies by 3.3 to get volts -y
+
 apps1_voltage = apps1.read() * 3.3f;
 apps2_voltage = apps2.read() * 3.3f;
+
+// turns each voltage into a 0 to 1 pedal position using its min and max, then clamps it (no higher/lower) -y
+ 
 apps1_pedal_position = clamp((apps1_voltage - APPS1_MIN_VOLTAGE) /(APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE));
 apps2_pedal_position = clamp((apps2_voltage - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE));
+
+// averages the two pedal positions and scales by max_torguw to get the torque request -y
+
 torque_demand = static_cast<int16_t>(((apps1_pedal_position + apps2_pedal_position) / 2.0f) * MAX_TORQUE);
 
     /*
