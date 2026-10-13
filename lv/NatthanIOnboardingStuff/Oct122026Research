@@ -1,1 +1,9 @@
+ok this is research on choosing the values for resistors and capacitors in a BSPD circuit. 
+
+For the 500 millisecond(or 0.5 second) delay, we must use a resistor to slow the charging of the capacitor which will trigger a change in the output of the Op-Amp Comparator circuit after it. To calculate charging time, we need to use the equation t = R x F(where t is a block of time, R is the resistor value, and F is the value of the capacitor in Farads). For the capacitor to be fully charged, 5 time blocks must pass. To be able to do a delay of 500 milliseconds, each time block must equal 0.1 seconds(or 100 millseconds). So our equation is now (0.1 = R x F). In my design, I'm just going to use say a 50 microfarad capacitor(that is 0.000005 farads). So now our equation is (0.1 = R x 0.000005). If we do some calculations, we find that my resistor that will help with the delay has a value of 20000 ohms(20k ohms). *this is pretty cool ngl*
+
+Also, when making a voltage divider for our Comparator Op-Amp circuit, I should use higher ohm resistors rather than lower ohm resistors for a few reasons(despite the ratio being the same). By using higher ohm-rated resistors, they cut down the current flowing through the circuit, which prevents other components from getting damaged. Plus, due to the resistance being high, the resistors are much less likely to burn out from heat. Additionally, since Op-Amps have "high input impendence"(the input pins draw almost no current from current divider so it doesn't really care about voltage), having high resistance on the resistors would be the safer option since there will be no difference in input. I'm using 10k ohm resistors in my design.
+
+I'm going to link another version of my paper design and will probably add a Kicad Version soon(but not today because I have a midterm to study for)
+
 
