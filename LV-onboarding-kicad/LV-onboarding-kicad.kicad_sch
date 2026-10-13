@@ -1599,6 +1599,26 @@
 		)
 		(uuid "06b3b72f-1078-4823-9e93-856fab5bce48")
 	)
+	(text "where does the power for the sensors come from"
+		(exclude_from_sim no)
+		(at 224.282 112.268 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "24c81900-086c-470f-8dd2-48e97e404879")
+	)
+	(text "0.333v"
+		(exclude_from_sim no)
+		(at 216.662 160.528 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "29f62566-172d-43d9-88f4-d4ea266e693c")
+	)
 	(text "non inverting op amp"
 		(exclude_from_sim no)
 		(at 72.136 14.732 0)
@@ -1611,7 +1631,7 @@
 	)
 	(text "0.333v"
 		(exclude_from_sim no)
-		(at 218.186 59.944 0)
+		(at 217.932 57.912 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1629,25 +1649,25 @@
 		)
 		(uuid "935450f0-7d08-4b69-9cfd-a245576436c8")
 	)
-	(text "luca made a point about how last year it tripped exactly at 5kw (or maybe 500ms?)\nideally trip earlier"
-		(exclude_from_sim yes)
-		(at 238.76 95.504 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "c7f40a0b-5db6-4d63-899a-55457bcb0a44")
-	)
 	(text "4.66v limit"
 		(exclude_from_sim no)
-		(at 217.932 26.67 0)
+		(at 218.186 25.908 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "d233e0e9-1d7e-4e8f-bb97-5423e83bffa5")
+	)
+	(text "4.66v"
+		(exclude_from_sim no)
+		(at 217.424 125.984 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d59d3d95-8e52-40a5-a715-c2de226b6e61")
 	)
 	(text "inverting op amp"
 		(exclude_from_sim no)
@@ -1715,38 +1735,16 @@
 		(uuid "c97b9b40-383f-4490-b732-44952fc0c8c1")
 	)
 	(junction
-		(at 200.66 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e06565bf-5ece-4be2-8bec-26ca3c276c83")
-	)
-	(junction
 		(at 25.4 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f58fb018-ff7b-4b5a-8f83-b4a0cff078cf")
 	)
 	(junction
-		(at 200.66 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fb1569d4-713e-46bc-8ae7-5accda766422")
-	)
-	(junction
 		(at 203.2 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff4ae1df-c947-472c-b85f-4cb10e5b68f3")
-	)
-	(wire
-		(pts
-			(xy 200.66 129.54) (xy 200.66 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "016c08b2-53ba-4d90-8b1e-bcf247e5efab")
 	)
 	(wire
 		(pts
@@ -1777,6 +1775,16 @@
 			(type default)
 		)
 		(uuid "1b2ae6fe-c858-4457-8bc5-f792b1b5b73f")
+	)
+	(wire
+		(pts
+			(xy 30.48 33.02) (xy 34.29 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28918f7e-0496-4008-9bf7-e1a7bca2a5f3")
 	)
 	(wire
 		(pts
@@ -2020,16 +2028,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 127) (xy 200.66 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a451247-514d-4c9c-83e5-5648610bf8bd")
-	)
-	(wire
-		(pts
 			(xy 62.23 24.13) (xy 62.23 27.94)
 		)
 		(stroke
@@ -2057,16 +2055,6 @@
 			(type default)
 		)
 		(uuid "94ca5d11-c3f4-4579-b78f-c3f9b48c1fd6")
-	)
-	(wire
-		(pts
-			(xy 200.66 129.54) (xy 223.52 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c53d2fa-00d1-47e5-a073-ba4469a066e3")
 	)
 	(wire
 		(pts
@@ -2210,26 +2198,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 158.75) (xy 223.52 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d56efce1-763a-4d89-9564-3b87befb10a5")
-	)
-	(wire
-		(pts
-			(xy 200.66 156.21) (xy 200.66 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d652ec9b-bb7f-429a-ac49-a815e4f6c10a")
-	)
-	(wire
-		(pts
 			(xy 55.88 160.02) (xy 78.74 160.02)
 		)
 		(stroke
@@ -2237,6 +2205,16 @@
 			(type default)
 		)
 		(uuid "d66e11df-277e-46b5-8a0c-a63186d9b7ac")
+	)
+	(wire
+		(pts
+			(xy 30.48 29.21) (xy 30.48 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da16cfd1-a91e-4f03-8f71-596b8398e5c2")
 	)
 	(wire
 		(pts
@@ -2388,6 +2366,26 @@
 		)
 		(uuid "59a69025-b850-4308-9400-0e521678d8c5")
 	)
+	(label "short_threshold"
+		(at 223.52 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6886a209-de44-49b7-911f-15d6ae6466c2")
+	)
+	(label "open_threshold"
+		(at 223.52 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "871cd81c-dd64-40a3-a02a-db49f34990f6")
+	)
 	(label "OUTPUT"
 		(at 227.33 34.29 180)
 		(effects
@@ -2477,6 +2475,26 @@
 			(justify left bottom)
 		)
 		(uuid "cf533f51-0a0d-468b-8b69-e2875729502f")
+	)
+	(label "short_threshold"
+		(at 210.82 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1012345-ae25-4ebf-a12f-8bc23bae7a37")
+	)
+	(label "open_threshold"
+		(at 210.82 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1b0b129-c17e-4e20-9477-4524186f5835")
 	)
 	(label "Analog Signal"
 		(at 45.72 109.22 0)
@@ -2657,85 +2675,6 @@
 			(project "LV-onboarding-kicad"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 200.66 151.13 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "06dfbe9a-69ea-4ce3-8fd7-532252fcaf06")
-		(property "Reference" "#PWR013"
-			(at 200.66 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 200.66 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 200.66 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4a441c5f-5513-4a57-ad3a-732d7f4e337e")
-		)
-		(instances
-			(project "LV-onboarding-kicad"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -3026,88 +2965,6 @@
 			(project "LV-onboarding-kicad"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 200.66 163.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e201ee3-fc8e-461d-97af-151407c8b89e")
-		(property "Reference" "R7"
-			(at 203.2 162.5599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "8.7k"
-			(at 203.2 165.0999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 200.66 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fd509a2c-819b-407d-8478-880c5537e3f7")
-		)
-		(pin "2"
-			(uuid "a9e04e78-a6c6-474f-a1f4-f32bd7bb40dd")
-		)
-		(instances
-			(project "LV-onboarding-kicad"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -3699,88 +3556,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 200.66 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2da55259-3f11-4435-a835-ac47cb6b398e")
-		(property "Reference" "R6"
-			(at 203.2 152.3999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "115k"
-			(at 203.2 154.9399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 200.66 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a4aee1f8-2fb0-469b-bbc8-8a06cc041135")
-		)
-		(pin "2"
-			(uuid "1bcd1faa-0ae4-454d-96fb-8daf50956a45")
-		)
-		(instances
-			(project "LV-onboarding-kicad"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 203.2 68.58 0)
 		(unit 1)
@@ -4117,7 +3892,7 @@
 				)
 			)
 		)
-		(property "Value" "HASS 50"
+		(property "Value" "HASS 300"
 			(at 25.4 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4961,85 +4736,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 200.66 166.37 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61436adc-bd55-47cc-a140-7ba2a3b1a1a7")
-		(property "Reference" "#PWR014"
-			(at 200.66 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 200.66 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "66daaae1-ae52-4d40-9c11-e1dda4294fc0")
-		)
-		(instances
-			(project "LV-onboarding-kicad"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 228.6 124.46 0)
 		(unit 1)
@@ -5273,85 +4969,6 @@
 			(project "LV-onboarding-kicad"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 30.48 29.21 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e58dee7-8cbb-4788-8c51-6cf2a08a3ede")
-		(property "Reference" "#PWR023"
-			(at 26.67 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 34.29 29.2099 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 30.48 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6dae763d-0ae2-47f9-8e9c-9ad394d6bc4c")
-		)
-		(instances
-			(project "LV-onboarding-kicad"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -5732,88 +5349,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 200.66 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87e3f31a-cfbf-4a66-b966-e4e6be131fb2")
-		(property "Reference" "R9"
-			(at 203.2 133.3499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "115k"
-			(at 203.2 135.8899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 200.66 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0a66360-9a64-43b8-9e56-f86a681adce0")
-		)
-		(pin "2"
-			(uuid "3ffa4e21-0060-4f73-be1e-d6ba548dbe1b")
-		)
-		(instances
-			(project "LV-onboarding-kicad"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 139.7 38.1 0)
 		(unit 1)
@@ -6048,88 +5583,6 @@
 			(project "LV-onboarding-kicad"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 200.66 124.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8e61cd59-f424-4f12-939b-8487a73a348d")
-		(property "Reference" "R8"
-			(at 203.2 123.1899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "8.7k"
-			(at 203.2 125.7299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 200.66 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "570a287f-3144-4e76-a22d-d4d57da761bd")
-		)
-		(pin "2"
-			(uuid "42f73383-4190-4692-aa78-530d10280cd7")
-		)
-		(instances
-			(project "LV-onboarding-kicad"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -6377,84 +5830,6 @@
 			(project "LV-onboarding-kicad"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 200.66 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "97e4eff3-63d5-4c7f-8d29-519e5bdb4f33")
-		(property "Reference" "#PWR017"
-			(at 200.66 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 200.66 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 200.66 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1900a00f-663b-4757-88fb-1acd46f4eca1")
-		)
-		(instances
-			(project "LV-onboarding-kicad"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -7740,6 +7115,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 34.29 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cbb837c3-d550-4df3-ba22-534d67be019d")
+		(property "Reference" "#PWR017"
+			(at 34.29 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 34.29 28.956 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 34.29 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fdb820de-f2c6-4821-9902-eacfc51712a5")
+		)
+		(instances
+			(project "LV-onboarding-kicad"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 203.2 24.13 0)
 		(unit 1)
@@ -8347,84 +7799,6 @@
 			(project "LV-onboarding-kicad"
 				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
 					(reference "U2A")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 200.66 137.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e8977388-5261-411b-a1b7-99e4eb9866d4")
-		(property "Reference" "#PWR018"
-			(at 200.66 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 200.66 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d0ab6596-49ea-4f42-abcb-64fd84512a06")
-		)
-		(instances
-			(project "LV-onboarding-kicad"
-				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
-					(reference "#PWR018")
 					(unit 1)
 				)
 			)
