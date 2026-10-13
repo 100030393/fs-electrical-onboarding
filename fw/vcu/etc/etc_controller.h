@@ -14,8 +14,8 @@ public:
         Start of public variables
     */
 
+    int16_t calculated_torque;
     bool READY_TO_DRIVE;
-
 
     /*
         End of public variables
@@ -36,7 +36,6 @@ private:
     AnalogIn pin1, pin2;
     float pin1_voltage, pin2_voltage;
     float pos1, pos2;
-    int16_t calculated_torque;
 
     /*
         End of private variables
