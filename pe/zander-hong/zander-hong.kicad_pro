@@ -571,7 +571,7 @@
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "kicad-embed://formulaslug_drawing_sheet.kicad_wks"
+    "page_layout_descr_file": ""
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -866,7 +866,7 @@
         "uuid": "e994741c-7c7d-4124-9d00-43b883baa61d"
       }
     ],
-    "used_designators": "C2A1,#PWR9",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
