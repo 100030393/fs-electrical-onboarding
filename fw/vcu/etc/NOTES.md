@@ -29,4 +29,9 @@
         - my first thought was to test what i've already written
         - how to test update_state() without having written 
         update_implausibilities()?
-        - perhaps it's better to 
+        - jack said i can maybe borrow a small microcontroller to push on
+            - not sure how to do that + have a midterm tomorrow, so 
+            holding off on that and instead just relying on compiling
+            every so often as a rudimentary catch-all before flashing
+            onto the car on Thursday (hopefully)
+        
