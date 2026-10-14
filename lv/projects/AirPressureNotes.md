@@ -1,8 +1,8 @@
 Sensor example: https://www.digikey.com/en/products/detail/bosch-sensortec/BMP180/2688259
 
-    Specifications (from DigiKey and datasheet from Bosch)
+# Specifications (from DigiKey and datasheet from Bosch)
     - BMP180
-    - Pressure range: 300 - 1100hPa (+9000m - -500m)
+    - Pressure range: 4.35 - 15.95PSI
     - Supply voltage: 1.8V - 3.6V (VDD), 1.62V - 3.6V (VDDIO)
     - Dimensions: 3.6mm x 3.8mm x 0.93mm
     - Two wire I2C interface
@@ -11,6 +11,7 @@ Sensor example: https://www.digikey.com/en/products/detail/bosch-sensortec/BMP18
     - Accuracy: +-2%
     - Termination style: SMD (SMT) tab
 
+# BMP 180 Considerations
     Pros
     - MEMS (micro-electro mechanical system), used to measure pressure
     - Commonly used with Arduinos, so there is a lot of support software-wise
@@ -27,20 +28,20 @@ Sensor example: https://www.digikey.com/en/products/detail/bosch-sensortec/BMP18
     - Still in stock and manufactured
     - Absolute pressure type, board mount to mirror previous application capacity and ability to be connected in an array
 
-Candidates
+# Communication notes
+- I2C is the communication method from the exmaple, which has the benefit of being a bus-based system, but requires extra pins to set addresses. Without addresses, the maximum amount of pressure sensors on the same bus is two, and that's only if one of the address bits can be changed (which is not always the case)
+- SPI is another common form of the communication, and has the benefit of having no theoretical limit (no set clockspeed, depends on the sensors and relevant electronics used). Unfortunatly it does not have a bus system that uses addresses, preventing the straightforward implementation of multiple sensors without using a significant amount of pins.
+- Analog sensors send continuous data and lack the capacity for bidirectional communication required of bus-based implementation. While there are very technical ways to connect multiple of them in series, it would likely compromise the integrity of the communication and would instead requiring a copious amount of GPIO on the microcontroller to have an array of analog sensors.
+- OneWire is another solution that provides a means for communicating with multiple devices on the same communication line. It has an incredibly high capacity for multiple devices in the same network, but with the pretty significant downside of not being a commmon native output interface, making it difficult to find an applicable sensor within specification.
+    - One possible sub-solution would be to have communication intermediaries like the DS2482S-800, which is a micro-board that translates between OneWire and I2C, providing 8 unique sensor connections to a single I2C bus. The downside is the added point of failure and complexity of translating between outputs, alongside the presence of an additional board.
+- SENT is the common sensor communication method for vehicles which is a significant positive considering the nature of Formula Slug, however, its focus is on data resolution and has no support for multiple sensors on a single communication line. 
+
+# Candidates
 Following filters:
 - Pressure type: Absolute
 - Accuracy: >=2%
 - Applications: Board mount
 - Product status: Active
-
-Communication notes
-- I2C is the communication method from the exmaple, which has the benefit of being a bus-based system, but requires extra pins to set addresses. Without addresses, the maximum amount of pressure sensors on the same bus is two, and that's only if one of the address bits can be changed (which is not always the case)
-- SPI is another common form of the communication, and has the benefit of having no theoretical limit (no set clockspeed, depends on the sensors and relevant electronics used). Unfortunatly it does not have a bus system that uses addresses, preventing the straightforward implementation of multiple sensors without using a significant amount of pins.
-- Analog sensors send continuous data and lack the capacity for bidirectional communication required of bus-based implementation. While there are very technical ways to connect multiple of them in series, it would likely compromise the integrity of the communication and would instead requiring a copious amount of GPIO on the microcontroller to have an array of analog sensors.
-- 1-Wire is another solution that provides a means for communicating with multiple devices on the same communication line. It has an incredibly high capacity for multiple devices in the same network, but with the pretty significant downside of not being a commmon native output interface, making it difficult to find an applicable sensor within specification.
-    - One possible sub-solution would be to have communication intermediaries like the DS2482S-800, which is a micro-board that translates between 1-Wire and I2C, providing 8 unique sensor connections to a single I2C bus. The downside is the added point of failure and complexity of translating between outputs, alongside the presence of an additional board.
-- SENT is the common sensor communication method for vehicles which is a significant positive considering the nature of Formula Slug, however, its focus is on data resolution and has no support for multiple sensors on a single communication line. 
 
 MS561101BA03-50
 - Initially promising because of its significantly better pressure range, compact size, and accuracy of the sensor
@@ -58,3 +59,8 @@ Following these failures, I went back to research I2C and found some interesting
 - Have multiple buses, each one with two sensors. The upside is flexibility with sensor choices, although the rather severe downside of requiring one pin for each sensor (although it is two sensors per bus, as far as I understand you would still need two pins per bus, resulting in 1:1 pin to sensor ratio for the microcontroller). This is also likely a hassle on the software side
 - Use multiple different sensor with their own addresses all on the I2C bus. While technically possible, processing the data from each one would be nightmareish as they would have their own respective ranges and accuracies, introducing too much variability to the end result of the information
 - I2C multiplixers are something that came up during this research, which suggested the possibility of having a secondary board connected to the microcontroller that would allow for multiple I2C sensors to be connected in the same bus, they would just need to be wired to the multiplixer, and the multiplexer would then be wired to the original microcontroller. The benefit is a significantly larger array of the same sensor on the same bus, but with the downside that there is now an additional board that needs to be accounted for in the layout of wherever the microcontroller is located. The most popular example is the TCA9548A (https://www.digikey.com/en/products/detail/adafruit-industries-llc/2717/5604376), which has 8 interfacing channels. These channels would then allow for 8 sensors with the same address to be connected to one microcontroller. With two-addresssolutions like the aforementioned BMP390, this opens up the possibility for 16 individual pressure sensors on the same I2C bus, which can be further expanded by either having multiple I2C buses or wiring multiplexers in series
+
+HSPPAD143C
+- Building off of the theory that I2C is viable with the introduction of multiplexing, this sensor is a promising candidate for several reasons
+- Aside from the benefits and drawbacks of sticking to I2C, the pure specifications make it ideal including a 0.2% accuracy rating for an increased operating pressure range (4.35 - 29.01PSI range)
+- Similar connection design makes it ideal for implementation, given its surface board mount design
