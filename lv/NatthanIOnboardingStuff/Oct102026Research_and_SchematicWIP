@@ -15,3 +15,5 @@ Speaking of relay, its like a switch activated by electricity that uses a low po
 I am going to link a very cool schematic drawing on paper with some annotations that is my attempt to draw the BSPD circuit, I will improve it and also make it in KiCad when I learn how to use it. 
 
 Ok thats all I have a midterm to study for(I need lots of practice for math) and I have to learn alot of stuff for slugworks for other stuff.
+
+10/13/26 Ok the circuit also needs to close the circuit up and reser itself if 10 seconds have passed so theres that.
