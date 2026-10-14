@@ -845,33 +845,93 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "When the internal transistor is turned off,\nthere is no current flowing so there is no\nvoltage drop across teh resisstor so 5V\nWhen the internal transistor is turned on,\nCurrent flows through thte resisitor and \ntransistior to ground, the output drops to\na low voltage"
+		(exclude_from_sim no)
+		(at 87.884 22.606 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0ff13ea7-257f-4545-87cc-d10aa152dcee")
+	)
+	(text "Out1: Either connects the ouput pin directly\n to ground or leaves the pin unpowered"
+		(exclude_from_sim no)
+		(at 203.708 36.576 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "255071ba-3175-4d7b-8f18-a492b5cccc20")
+	)
+	(text "Positive Supply: powers the comparator\n"
+		(exclude_from_sim no)
+		(at 164.592 19.558 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3db3c76e-bcd0-4cc6-8705-08e2c6521a6d")
+	)
+	(text "VREF1: reference voltage to be the level\n against which the input is measured"
+		(exclude_from_sim no)
+		(at 129.286 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8b2e7e6b-ef6a-4c65-bb3b-a2e481462ce7")
+	)
+	(text "Negative Supply / GND: connects to ground\n for the negative power rail for the IC"
+		(exclude_from_sim no)
+		(at 163.576 51.308 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d9190013-11b1-453e-b523-e9565f4e8f3d")
+	)
+	(text "VIN1: Non-Inverting Input voltage\n that gets evauated"
+		(exclude_from_sim no)
+		(at 134.366 32.766 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f1ace750-c566-433e-9d35-acac84655190")
+	)
 	(junction
-		(at 125.73 88.9)
+		(at 46.99 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4ecfe1d1-4635-4ef9-b0b1-5c9c2daaa016")
 	)
 	(junction
-		(at 125.73 116.84)
+		(at 46.99 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aed5167d-5b01-4925-a4bd-f26b95f17e45")
 	)
 	(junction
-		(at 143.51 102.87)
+		(at 64.77 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf9ebde4-168d-47fb-b2e0-43691dd5b1f9")
 	)
 	(junction
-		(at 125.73 92.71)
+		(at 46.99 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d52535e8-06f7-46fe-a000-8098dcf96660")
 	)
 	(wire
 		(pts
-			(xy 125.73 86.36) (xy 125.73 88.9)
+			(xy 46.99 22.86) (xy 46.99 25.4)
 		)
 		(stroke
 			(width 0)
@@ -881,7 +941,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 92.71) (xy 125.73 95.25)
+			(xy 46.99 29.21) (xy 46.99 31.75)
 		)
 		(stroke
 			(width 0)
@@ -891,7 +951,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 95.25) (xy 107.95 100.33)
+			(xy 29.21 31.75) (xy 29.21 36.83)
 		)
 		(stroke
 			(width 0)
@@ -901,7 +961,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 100.33) (xy 120.65 100.33)
+			(xy 29.21 36.83) (xy 41.91 36.83)
 		)
 		(stroke
 			(width 0)
@@ -911,7 +971,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 102.87) (xy 149.86 102.87)
+			(xy 173.99 36.83) (xy 181.61 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56e39ffd-e837-49ef-898e-6ea0ae601c91")
+	)
+	(wire
+		(pts
+			(xy 64.77 39.37) (xy 71.12 39.37)
 		)
 		(stroke
 			(width 0)
@@ -921,7 +991,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 92.71) (xy 133.35 92.71)
+			(xy 46.99 29.21) (xy 54.61 29.21)
 		)
 		(stroke
 			(width 0)
@@ -931,7 +1001,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 88.9) (xy 125.73 92.71)
+			(xy 46.99 25.4) (xy 46.99 29.21)
 		)
 		(stroke
 			(width 0)
@@ -941,7 +1011,17 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 102.87) (xy 143.51 102.87)
+			(xy 163.83 44.45) (xy 163.83 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "766e86ce-6807-445a-9e4d-ede74ba653e4")
+	)
+	(wire
+		(pts
+			(xy 57.15 39.37) (xy 64.77 39.37)
 		)
 		(stroke
 			(width 0)
@@ -951,7 +1031,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 92.71) (xy 143.51 92.71)
+			(xy 62.23 29.21) (xy 64.77 29.21)
 		)
 		(stroke
 			(width 0)
@@ -961,7 +1041,17 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 110.49) (xy 125.73 116.84)
+			(xy 151.13 39.37) (xy 158.75 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abca46b6-6556-4504-9dbe-ee5220261450")
+	)
+	(wire
+		(pts
+			(xy 46.99 46.99) (xy 46.99 53.34)
 		)
 		(stroke
 			(width 0)
@@ -971,7 +1061,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 116.84) (xy 125.73 120.65)
+			(xy 46.99 53.34) (xy 46.99 57.15)
 		)
 		(stroke
 			(width 0)
@@ -981,7 +1071,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 105.41) (xy 120.65 105.41)
+			(xy 29.21 41.91) (xy 41.91 41.91)
 		)
 		(stroke
 			(width 0)
@@ -991,7 +1081,17 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 109.22) (xy 107.95 105.41)
+			(xy 151.13 34.29) (xy 158.75 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db78312f-a67f-4619-9528-f7cf070fa059")
+	)
+	(wire
+		(pts
+			(xy 29.21 45.72) (xy 29.21 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1001,7 +1101,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 92.71) (xy 143.51 102.87)
+			(xy 163.83 24.13) (xy 163.83 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3bf99fe-9abb-42d3-bcbe-8b10129fd2fc")
+	)
+	(wire
+		(pts
+			(xy 64.77 29.21) (xy 64.77 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1011,7 +1121,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 154.94 102.87 0)
+		(at 76.2 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1022,7 +1132,7 @@
 		(fields_autoplaced yes)
 		(uuid "2089fdf6-72d7-4eeb-9bd3-7acaf72a48b0")
 		(property "Reference" "OUT1"
-			(at 157.48 101.5999 0)
+			(at 78.74 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1033,7 +1143,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 157.48 104.1399 0)
+			(at 78.74 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1044,7 +1154,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 102.87 0)
+			(at 76.2 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1055,7 +1165,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 102.87 0)
+			(at 76.2 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1066,7 +1176,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 154.94 102.87 0)
+			(at 76.2 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1090,7 +1200,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 102.87 109.22 180)
+		(at 24.13 45.72 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1101,7 +1211,7 @@
 		(fields_autoplaced yes)
 		(uuid "4049a51b-6a17-4d6b-bcb9-b78bca6650aa")
 		(property "Reference" "VREF1"
-			(at 102.87 102.87 0)
+			(at 24.13 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1111,7 +1221,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 102.87 105.41 0)
+			(at 24.13 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1121,7 +1231,7 @@
 			)
 		)
 		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
-			(at 102.87 109.22 0)
+			(at 24.13 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1132,7 +1242,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 109.22 0)
+			(at 24.13 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1143,7 +1253,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 102.87 109.22 0)
+			(at 24.13 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1167,7 +1277,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 125.73 116.84 90)
+		(at 46.99 53.34 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1178,7 +1288,7 @@
 		(fields_autoplaced yes)
 		(uuid "465e09f1-9a9a-408d-94a1-eefcd33c4a3a")
 		(property "Reference" "#FLG02"
-			(at 123.825 116.84 0)
+			(at 45.085 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1189,7 +1299,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 121.92 116.8399 90)
+			(at 43.18 53.3399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1200,7 +1310,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 116.84 0)
+			(at 46.99 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1211,7 +1321,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 116.84 0)
+			(at 46.99 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1222,7 +1332,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 125.73 116.84 0)
+			(at 46.99 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1246,7 +1356,7 @@
 	)
 	(symbol
 		(lib_id "Comparator:LM397")
-		(at 128.27 102.87 0)
+		(at 49.53 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1257,7 +1367,7 @@
 		(fields_autoplaced yes)
 		(uuid "4be7a4aa-3c07-4a07-a5b0-e0ae6a93f37f")
 		(property "Reference" "U1"
-			(at 138.43 96.4498 0)
+			(at 59.69 32.9498 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1267,7 +1377,7 @@
 			)
 		)
 		(property "Value" "LM397"
-			(at 138.43 98.9898 0)
+			(at 59.69 35.4898 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1277,7 +1387,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 129.54 118.11 0)
+			(at 50.8 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1288,7 +1398,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm397.pdf"
-			(at 128.27 97.79 0)
+			(at 49.53 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1299,7 +1409,7 @@
 			)
 		)
 		(property "Description" "Single General-Purpose Voltage Comparator with Open-Collector Output, SOT-23-5"
-			(at 128.27 102.87 0)
+			(at 49.53 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1335,7 +1445,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 125.73 86.36 0)
+		(at 46.99 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1346,7 +1456,7 @@
 		(fields_autoplaced yes)
 		(uuid "4c1cde01-6309-4b3d-8dc5-d5d6a32d18f8")
 		(property "Reference" "#PWR01"
-			(at 125.73 90.17 0)
+			(at 46.99 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1357,7 +1467,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 125.73 81.28 0)
+			(at 46.99 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1367,7 +1477,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 86.36 0)
+			(at 46.99 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1378,7 +1488,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 86.36 0)
+			(at 46.99 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1389,7 +1499,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 125.73 86.36 0)
+			(at 46.99 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1413,7 +1523,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 137.16 92.71 90)
+		(at 58.42 29.21 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1424,7 +1534,7 @@
 		(fields_autoplaced yes)
 		(uuid "4cd4e706-73f8-4f36-942c-9a8436541c45")
 		(property "Reference" "Pull-up1"
-			(at 137.16 86.36 90)
+			(at 58.42 22.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1434,7 +1544,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 137.16 88.9 90)
+			(at 58.42 25.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1444,7 +1554,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 137.16 94.488 90)
+			(at 58.42 30.988 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1455,7 +1565,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 92.71 0)
+			(at 58.42 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1466,7 +1576,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 137.16 92.71 0)
+			(at 58.42 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1492,8 +1602,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Comparator:LM397")
+		(at 166.37 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5eddf931-a0e9-414e-9164-11c9bfd3bfa4")
+		(property "Reference" "U2"
+			(at 176.53 30.4098 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM397"
+			(at 176.53 32.9498 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 167.64 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm397.pdf"
+			(at 166.37 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single General-Purpose Voltage Comparator with Open-Collector Output, SOT-23-5"
+			(at 166.37 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "809fc829-930e-4b24-bf27-b1914788dfea")
+		)
+		(pin "5"
+			(uuid "213419d8-e5a7-4b40-8ca3-5c94326b0a59")
+		)
+		(pin "4"
+			(uuid "8e63bc16-8f30-4784-95e2-4690e530cfb7")
+		)
+		(pin "1"
+			(uuid "cb0b965b-3620-4ad1-ac26-b6813d1ff226")
+		)
+		(pin "2"
+			(uuid "857a6d8e-84bd-4696-8156-b52b2965341f")
+		)
+		(instances
+			(project "template"
+				(path "/e994741c-7c7d-4124-9d00-43b883baa61d"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 125.73 88.9 90)
+		(at 46.99 25.4 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1504,7 +1703,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a230003-7042-47dd-b921-69426c0a7968")
 		(property "Reference" "#FLG01"
-			(at 123.825 88.9 0)
+			(at 45.085 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1515,7 +1714,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 121.92 88.8999 90)
+			(at 43.18 25.3999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1526,7 +1725,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
-			(at 125.73 88.9 0)
+			(at 46.99 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1537,7 +1736,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 88.9 0)
+			(at 46.99 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1548,7 +1747,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 125.73 88.9 0)
+			(at 46.99 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1572,7 +1771,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 102.87 95.25 180)
+		(at 24.13 31.75 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1583,7 +1782,7 @@
 		(fields_autoplaced yes)
 		(uuid "de454c1c-45d0-4f2b-84cc-9e4781fa77c0")
 		(property "Reference" "VIN1"
-			(at 102.87 88.9 0)
+			(at 24.13 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1593,7 +1792,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 102.87 91.44 0)
+			(at 24.13 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1603,7 +1802,7 @@
 			)
 		)
 		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
-			(at 102.87 95.25 0)
+			(at 24.13 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1614,7 +1813,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 95.25 0)
+			(at 24.13 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1625,7 +1824,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 102.87 95.25 0)
+			(at 24.13 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1649,7 +1848,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 125.73 120.65 0)
+		(at 46.99 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1660,7 +1859,7 @@
 		(fields_autoplaced yes)
 		(uuid "f11c436c-0980-4e4b-816d-57dc5260ad37")
 		(property "Reference" "#PWR02"
-			(at 125.73 127 0)
+			(at 46.99 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1671,7 +1870,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.73 125.73 0)
+			(at 46.99 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1681,7 +1880,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 120.65 0)
+			(at 46.99 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1692,7 +1891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 120.65 0)
+			(at 46.99 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1703,7 +1902,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 120.65 0)
+			(at 46.99 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
