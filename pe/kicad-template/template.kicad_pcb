@@ -157,7 +157,7 @@
 				)
 			)
 		)
-		(property "Value" "10.5uH"
+		(property "Value" "15uH"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "15eca129-6f4b-4f71-9fd6-1fad9549d250")
@@ -281,7 +281,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(C1-Pad1)")
+			(net "+5V")
 			(pintype "passive")
 			(uuid "123e3183-e8dd-40fa-90f7-2a5d8eebfe87")
 		)
@@ -315,7 +315,7 @@
 				)
 			)
 		)
-		(property "Value" "15uF"
+		(property "Value" "22uF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "47cc7d71-afa2-4ebf-8e12-ebaf83a2f287")
@@ -357,6 +357,58 @@
 				(font
 					(size 1 1)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey Part Number" "4713-GMC10X5R226M10NTDKR-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "425259ba-354e-47a6-87d6-a77b9d436b09")
+			(effects
+				(font
+					(size 1.016 1.016)
+					(thickness 0.1524)
+				)
+			)
+		)
+		(property "Digikey URL" "https://www.digikey.com/en/products/detail/cal-chip-electronics-inc/GMC10X5R226M10NT/22461275"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8a3cb0f-9e48-4807-a3d9-be6837f1f5fe")
+			(effects
+				(font
+					(size 1.016 1.016)
+					(thickness 0.1524)
+				)
+			)
+		)
+		(property "Manufacturer" "Cal-Chip Electronics, Inc."
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1bb9edf3-851d-47c0-ba9a-c86dd4374c18")
+			(effects
+				(font
+					(size 1.016 1.016)
+					(thickness 0.1524)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "GMC10X5R226M10NT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d08afbd5-3b91-495e-88e0-5064f13424e7")
+			(effects
+				(font
+					(size 1.016 1.016)
+					(thickness 0.1524)
 				)
 			)
 		)
@@ -430,7 +482,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(C1-Pad1)")
+			(net "+5V")
 			(pintype "passive")
 			(uuid "26379261-9c53-40d1-9248-3fed1c4757e7")
 		)
@@ -439,7 +491,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GND")
+			(net "+5V")
 			(pintype "passive")
 			(uuid "c2cf1f91-0a51-46ae-bca8-a5c02d17d516")
 		)
@@ -518,6 +570,58 @@
 				)
 			)
 		)
+		(property "Digikey Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d52357cc-861b-4459-b94f-800beb66304a")
+			(effects
+				(font
+					(size 1.016 1.016)
+					(thickness 0.1524)
+				)
+			)
+		)
+		(property "Digikey URL" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e675d4be-6327-4c73-951b-0dedbca9ff56")
+			(effects
+				(font
+					(size 1.016 1.016)
+					(thickness 0.1524)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5aa50e86-e186-46a6-8fda-95cd7be237e4")
+			(effects
+				(font
+					(size 1.016 1.016)
+					(thickness 0.1524)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e69ac40-32f3-4e4a-a44a-d92b693713f7")
+			(effects
+				(font
+					(size 1.016 1.016)
+					(thickness 0.1524)
+				)
+			)
+		)
 		(path "/881bcffc-b424-4512-8151-4584f0edb83c")
 		(sheetname "/")
 		(sheetfile "template.kicad_sch")
@@ -527,7 +631,7 @@
 				(pins "1" "2" "3" "6" "5" "4")
 			)
 		)
-		(attr smd)
+		(attr smd exclude_from_pos_files)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.91 -1.56)
@@ -749,7 +853,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "GND")
+			(net "+5V")
 			(pinfunction "GND_1")
 			(pintype "power_in")
 			(uuid "bbdccf0e-8335-4fa2-ba16-baafbe6656a8")
@@ -769,7 +873,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/V_in 13.5v")
+			(net "+15V")
 			(pinfunction "VIN_3")
 			(pintype "power_in")
 			(uuid "f98663d7-b219-4764-ab7a-419a9de20fd8")
