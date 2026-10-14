@@ -35,6 +35,24 @@ private:
     /*
         Start of private variables
     */
+   
+    //can message
+    //each ellement of the array can hold 8 bits
+        //does that mean each item has to be 8 bits or can it be less?
+            //ie SG_ VCU_ETC_READY_TO_DRIVE : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+            //should this ^^^ be 1 item or should  it be grouped with other items?
+            //SG_ VCU_BRAKE_PRESSSURE_FRONT : 16|16@1+ (1,0) [0|65535] "psi" Vector__XXX
+            //^^ how do i break this up into seperate items?
+    uint8_t VCU_TPDO_STATUS[8] = {
+        00000001, 
+        00000001, 
+        00000000, 
+        00000000, 
+        00000001, 
+        00000000, 
+        00000001, 
+        00000000
+    };
    //input variables
     float apps1_voltage = 0.0f;
     float apps2_voltage = 0.0f;

@@ -5,8 +5,10 @@
 
 ETCController etc{PC_1 , PC_2};
 
-
+// can{read_pin, transmit_pin, bus_frequency(hz)} 
 CAN can{PB_8, PB_9, 500000};
+
+// do the sme and etc send messages with the same can bus?
 
 // Predefined for use in main()
 void send_etc_CAN_messages();
@@ -17,7 +19,6 @@ Ticker send_sme_CAN_messages_ticker;
 
 int main() {
     printf("Hello World!!\n");
-
     /*
         Make send_CAN messages loop consistently
         at 20hz (20 messages / second)
@@ -42,8 +43,13 @@ int main() {
     & VCU_ETC_IMPLAUS_APPS_DEVIATION properly added.
 */
 void send_etc_CAN_messages() {
-    printf("Sending ETC CAN messages\n");
+    CANMessage vcu_tpdo_status_msg();
+    write.vcu_tpdo_status_msg;
 
+    
+    // if(can.write(CANMessage(403, VCU_TPDO_STATUS, 8, CANData, CANStandard))) {
+    //     printf("Sending ETC CAN messages\n");
+    // }
 } //add functionality
 
 /*
@@ -52,5 +58,6 @@ void send_etc_CAN_messages() {
     torque demand determined by the ETC.
 */
 void send_sme_CAN_messages() {
+    
     printf("Sending SME CAN messages\n");
 }

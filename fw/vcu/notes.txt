@@ -26,10 +26,28 @@ components info
     hal - interface between high level and low level systems  - not really sure what this does
         I think apps -> HAL -> VCU -> HAL -> motor
     etc - program 'instructions' for VCU
+    CAN - 
 
 Percentage Difference =	
 |V1 - V2|/((V1 + V2)/2)
 × 100
+
+{
+    CANMessage	(	unsigned int 	_id,
+    const unsigned char * 	_data,
+    unsigned char 	_len = 8,
+    CANType 	_type = CANData,
+    CANFormat 	_format = CANStandard 
+    )		
+    Creates CAN message with specific content.
+
+    Parameters
+    _id	Message ID
+    _data	Mesaage Data
+    _len	Message Data length
+    _type	Type of Data: Use enum CANType for valid parameter values
+    _format	Data Format: Use enum CANFormat for valid parameter values
+}
 
 Hertz to MicroSeconds
     MicroSeconds = 1,000,000/Hertz
