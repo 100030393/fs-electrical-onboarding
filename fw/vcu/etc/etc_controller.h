@@ -14,7 +14,7 @@ public:
         Start of public variables
     */
 
-
+    float motor_torque_demand;
 
     /*
         End of public variables

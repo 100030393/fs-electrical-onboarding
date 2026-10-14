@@ -7,7 +7,8 @@
 // Assign appropriate GPIO objects depending on pin parameters
 ETCController::ETCController(PinName APPS1_pin, PinName APPS2_pin)   
    :    myread_1(APPS1_pin),
-        myread_2(APPS2_pin)
+        myread_2(APPS2_pin),
+        motor_torque_demand(0.0f) // defaultly setting this to 0 for now
 {
 
 }
@@ -55,11 +56,17 @@ void ETCController::update_state() {
         include your own pedal mapping to make it non linear!
     */
 
+    // retrieve the APPS sensor voltages..
+    float voltage_1 = myread_1.read();
+    float voltage_2 = myread_2.read();
 
+    // convert to float \in [0.0, 1.0]
+    float pedal_pos_1 = (voltage_1 - APPS1_MIN_VOLTAGE) / (APPS1_MAX_VOLTAGE - APPS1_MIN_VOLTAGE);
+    float pedal_pos_2 = (voltage_2 - APPS2_MIN_VOLTAGE) / (APPS2_MAX_VOLTAGE - APPS2_MIN_VOLTAGE);
 
-    /*
-        Finish the step listed above.
-    */
+    float avg_pedal_pos = (pedal_pos_1 + pedal_pos_2) / 2.0;
+
+    float motor_torque_demand = avg_pedal_pos * MAX_TORQUE;
 
     // Here to simplify this function and readability.
     update_implausibilities();
