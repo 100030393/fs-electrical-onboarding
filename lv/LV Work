@@ -4,6 +4,7 @@ Strain Gauges are small sensors that measures how much an object stretches or co
 They sit on a thin insulating material that can support the foil grid while not getting in the way.
 Then at the end of the sensor are two points for electrical leads that connect to the sensor.
 
+
 If the metal stretches on the sensor then it increases its resistance, whilel if it compresses then it decreases resistance.
 
 This is done with the equation: R= p*(L/A)
@@ -21,22 +22,32 @@ R= p*L/(w*t)
 
 p = copper's resistivity at 1.68*10^-8 ohm*m (Found on this site: http://hyperphysics.phy-astr.gsu.edu/hbase/Tables/rstiv.html)
 L is the trace length
-w is the trace width (3 mil = .0762mm)
-t is the copper thickness
-
+w is the trace width (3 mil = .0762mm) This is assumed on the JLC website.
+t is the copper thickness = 12 micrometers
+R = 350
 rearrange equation for L:
 L = R*w*t/p
 
 Length with 12 micrometer of copper thickness which has a 3mil minimum width:
 L = 350 * (7.62*10^-5)*(1.2*10^-5)/(1.68*10^-8) = Roughly 19.05m
 
-Length with 18 micrometer:
+19050/100 = 190.5 rows (if each row is 100mm across)
+
+Length with 18 micrometer copper thickness:
 w = .0889 mm
 t = 1.8*10^-5
 
 L = 350 * (8.89*10^-5)*(1.8*10^-5)/(1.68*10^-8) = roughly 33.34m
+Minimum trace width for 18 micrometers of copper: 3.5mil = .0889mm (3.5 * .0254 = .0889mm)
+Minimum spacing is also .0889mm
+.0889 * 2 = .1778mm so each row and space is .1778mm and there is 333.4 rows
+333.4 * .1778 = 59.278mm
 
-Length with 35 micrometers:
+So the minimum board would be around 115mm by 60mm for 18micrometers of copper thickness, Accounting for the connection pads being around 10mm long.
+This would probably not be good for the board as the trace would be extremely close to the edges of the board.
+
+33340/100 = 333.4 rows (if each row is 100mm across)
+Length with 35 micrometers copper thickness:
 w = .1016mm
 t = 3.5*10^-5
 
